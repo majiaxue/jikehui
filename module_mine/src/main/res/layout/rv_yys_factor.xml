@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_15_fff"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/rv_yys_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dp_28"
+        android:text="初级运营商"
+        android:textColor="#333333"
+        android:textSize="@dimen/sp_15" />
+
+    <LinearLayout
+        android:id="@+id/rv_yys_factor1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_marginTop="@dimen/dp_30"
+        android:layout_marginRight="@dimen/dp_20"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/dp_12"
+                android:layout_height="@dimen/dp_12"
+                android:src="@drawable/ghf" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_13"
+                android:text="条件一："
+                android:textColor="#333333"
+                android:textSize="@dimen/sp_12" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/rv_yys_content"
+            android:layout_width="@dimen/dp_0"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_weight="1"
+            android:textColor="#333333"
+            android:textSize="@dimen/sp_12" />
+
+        <TextView
+            android:id="@+id/rv_yys_just_up"
+            android:layout_width="@dimen/dp_79"
+            android:layout_height="@dimen/dp_25"
+            android:background="@drawable/bg_btn_upgrade"
+            android:gravity="center"
+            android:text="@string/upgrade_just"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/sp_15" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/rv_yys_factor2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_marginTop="@dimen/dp_30"
+        android:layout_marginRight="@dimen/dp_20"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/dp_12"
+                android:layout_height="@dimen/dp_12"
+                android:src="@drawable/ghf" />
+
+            <TextView
+                android:id="@+id/rv_yys_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_13"
+                android:text="条件二："
+                android:textColor="#333333"
+                android:textSize="@dimen/sp_12" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/rv_yys_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="100元"
+            android:textColor="#333333"
+            android:textSize="@dimen/sp_12" />
+
+        <View
+            android:layout_width="@dimen/dp_0"
+            android:layout_height="@dimen/dp_0"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/rv_yys_topay"
+            android:layout_width="@dimen/dp_55"
+            android:layout_height="@dimen/dp_25"
+            android:background="@drawable/bg_5_fb4619"
+            android:gravity="center"
+            android:text="支付"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/sp_12" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/rv_yys_remark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_marginTop="@dimen/dp_50"
+        android:layout_marginRight="@dimen/dp_20"
+        android:layout_marginBottom="@dimen/dp_14"
+        android:gravity="center"
+        android:text="备注：两个条件任选其一"
+        android:textColor="#999999"
+        android:textSize="@dimen/sp_12" />
+</LinearLayout>

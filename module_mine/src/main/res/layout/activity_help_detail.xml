@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/page_top" />
+
+    <TextView
+        android:id="@+id/help_detail_question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_13"
+        android:layout_marginTop="@dimen/dp_17"
+        android:includeFontPadding="false"
+        android:text="双十一预售商品佣金问题？"
+        android:textColor="#333333"
+        android:textSize="@dimen/sp_17" />
+
+    <TextView
+        android:id="@+id/help_detail_answer"
+        android:layout_width="@dimen/dp_352"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_13"
+        android:layout_marginTop="@dimen/dp_28"
+        android:includeFontPadding="false"
+        android:text="预售商品的佣金归属，取决于下单链接是谁推广的，与后期支付尾款时使用的红包无关，佣金会按照订单支付尾款后，【定金+尾款】总的成交金额计算佣金，付尾款时佣金比例如果发生变化整个订单任然按照定金支付时的佣金比例计算，在订单确认收获后预售订单中的付款金额，佣金才会变化，以实际结算金额为准预售商品的佣金归属，取决于下单链接是谁推广的，与后期支付尾款时使用的红包无关，佣金会按照订单支付尾款后，【定金+尾款】总的成交金额计算佣金，付尾款时佣金比例如果发生变化整个订单任然按照定金支付时的佣金比例计算，在订单确认收获后预售订单中的付款金额，佣金才会变化，以实际结算金额为准 "
+        android:textColor="#666666"
+        android:textSize="@dimen/sp_14" />
+</LinearLayout>

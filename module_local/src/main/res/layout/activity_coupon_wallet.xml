@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_coupon_wallet"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_status" />
+
+    <ImageView
+        android:id="@+id/coupon_wallet_back"
+        android:layout_width="@dimen/dp_36"
+        android:layout_height="@dimen/dp_44"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="@dimen/dp_5"
+        android:padding="@dimen/dp_14"
+        android:src="@drawable/icon_fanhui_bai" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_42"
+        android:layout_marginTop="@dimen/dp_240"
+        android:layout_marginRight="@dimen/dp_42">
+
+        <View
+            android:layout_width="@dimen/dp_40"
+            android:layout_height="@dimen/dp_1"
+            android:layout_centerVertical="true"
+            android:background="#060606" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="限时购免优惠钱包"
+            android:textColor="#1a1a18"
+            android:textSize="@dimen/sp_17" />
+
+        <View
+            android:layout_width="@dimen/dp_40"
+            android:layout_height="@dimen/dp_1"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="#060606" />
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/coupon_wallet_rv"
+        android:layout_width="@dimen/dp_335"
+        android:layout_height="@dimen/dp_240"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dp_30"
+        android:overScrollMode="never" />
+</LinearLayout>

@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/page_top" />
+
+    <ImageView
+        android:layout_width="@dimen/dp_42"
+        android:layout_height="@dimen/dp_42"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dp_57"
+        android:src="@drawable/img_chenggong" />
+
+    <TextView
+        android:id="@+id/local_order_detail_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dp_18"
+        android:text="下单成功 待配送"
+        android:textColor="#333333"
+        android:textSize="@dimen/sp_18" />
+
+    <RelativeLayout
+        android:id="@+id/local_order_detail_rela"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_85"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/local_order_detail_home"
+            android:layout_width="@dimen/dp_128"
+            android:layout_height="@dimen/dp_44"
+            android:layout_marginLeft="@dimen/dp_35"
+            android:background="@drawable/bg_22_fb5318_border"
+            android:gravity="center"
+            android:text="返回首页"
+            android:textColor="#fb5318"
+            android:textSize="@dimen/sp_16" />
+
+        <TextView
+            android:id="@+id/local_order_detail_see"
+            android:layout_width="@dimen/dp_128"
+            android:layout_height="@dimen/dp_44"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dp_35"
+            android:background="@drawable/bg_22_fb5318"
+            android:gravity="center"
+            android:text="查看详情"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/sp_16" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/local_order_detail_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/local_order_detail_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dp_11"
+            android:text="您的取货码为：0896"
+            android:textColor="#fb5318"
+            android:textSize="@dimen/sp_15" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_14"
+            android:layout_marginTop="@dimen/dp_16"
+            android:background="#f5f5f5" />
+
+        <TextView
+            android:id="@+id/local_order_detail_shop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_15"
+            android:layout_marginTop="@dimen/dp_26"
+            android:text="万年老店秘制虾尾独门秘方"
+            android:textColor="#333333"
+            android:textSize="@dimen/sp_16" />
+
+        <TextView
+            android:id="@+id/local_order_detail_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_15"
+            android:layout_marginTop="@dimen/dp_11"
+            android:text="农业路东明路交叉口名门国际3A层"
+            android:textColor="#999999"
+            android:textSize="@dimen/sp_12" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_0_5"
+            android:layout_marginTop="@dimen/dp_20"
+            android:background="#f5f5f5" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_15"
+            android:layout_marginTop="@dimen/dp_15"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="时间："
+                android:textColor="#999999"
+                android:textSize="@dimen/sp_10" />
+
+            <TextView
+                android:id="@+id/local_order_detail_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="8月25日  周日  （上班时间：9:00 - 21:00）"
+                android:textColor="#fb5318"
+                android:textSize="@dimen/sp_14" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_15"
+            android:layout_marginTop="@dimen/dp_7"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="价格："
+                android:textColor="#999999"
+                android:textSize="@dimen/sp_10" />
+
+            <TextView
+                android:id="@+id/local_order_detail_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="￥30.9"
+                android:textColor="#333333"
+                android:textSize="@dimen/sp_14" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_0_5"
+            android:layout_marginTop="@dimen/dp_16"
+            android:background="#f5f5f5" />
+
+        <TextView
+            android:id="@+id/local_order_detail_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_15"
+            android:layout_marginTop="@dimen/dp_12"
+            android:text="预定手机号：158 5421 5521"
+            android:textColor="#999999"
+            android:textSize="@dimen/sp_14" />
+
+        <TextView
+            android:id="@+id/local_order_detail_ordersn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_15"
+            android:layout_marginTop="@dimen/dp_8"
+            android:text="订单编号：85412512"
+            android:textColor="#999999"
+            android:textSize="@dimen/sp_14" />
+
+        <View
+            android:layout_width="@dimen/dp_0"
+            android:layout_height="@dimen/dp_0"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/local_order_detail_tuikuan"
+            android:layout_width="@dimen/dp_345"
+            android:layout_height="@dimen/dp_44"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/dp_40"
+            android:background="@drawable/bg_22_bfbfbf"
+            android:gravity="center"
+            android:text="申请退款"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/sp_16" />
+    </LinearLayout>
+</LinearLayout>

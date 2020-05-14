@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/rv_local_order_inner_img"
+        android:layout_width="@dimen/dp_90"
+        android:layout_height="@dimen/dp_90"
+        android:layout_marginLeft="@dimen/dp_12"
+        android:layout_marginTop="@dimen/dp_12"
+        app:roundBottomLeft="true"
+        app:roundBottomRight="true"
+        app:roundTopLeft="true"
+        app:roundTopRight="true"
+        app:roundedCornerRadius="@dimen/dp_2" />
+
+    <TextView
+        android:id="@+id/rv_local_order_inner_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/rv_local_order_inner_img"
+        android:layout_marginLeft="@dimen/dp_13"
+        android:layout_marginRight="@dimen/dp_13"
+        android:layout_toRightOf="@id/rv_local_order_inner_img"
+        android:ellipsize="end"
+        android:includeFontPadding="false"
+        android:maxLines="2"
+        android:text="【爆款】招牌麻辣小龙虾-必点约10只麻辣虾"
+        android:textColor="#333333"
+        android:textSize="@dimen/sp_14" />
+
+    <TextView
+        android:id="@+id/rv_local_order_inner_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rv_local_order_inner_name"
+        android:layout_alignRight="@id/rv_local_order_inner_name"
+        android:layout_marginTop="@dimen/dp_12"
+        android:includeFontPadding="false"
+        android:text="X2"
+        android:textColor="#333333"
+        android:textSize="@dimen/sp_12" />
+
+    <TextView
+        android:id="@+id/rv_local_order_inner_money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rv_local_order_inner_count"
+        android:layout_alignRight="@id/rv_local_order_inner_name"
+        android:layout_marginTop="@dimen/dp_12"
+        android:includeFontPadding="false"
+        android:text="￥19.9"
+        android:textColor="#fb5318"
+        android:textSize="@dimen/sp_18" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:layout_below="@id/rv_local_order_inner_money"
+        android:layout_marginTop="@dimen/dp_5"
+        android:background="#dedede" />
+</RelativeLayout>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/dp_81"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_shouyetankuang"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/pop_shop_more_msg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_14"
+        android:layout_marginTop="@dimen/dp_16"
+        android:layout_marginRight="@dimen/dp_13">
+
+        <ImageView
+            android:id="@+id/pop_shop_more_msg_img"
+            android:layout_width="@dimen/dp_17"
+            android:layout_height="@dimen/dp_16"
+            android:layout_centerVertical="true"
+            android:src="@drawable/icon_xiaoxi11" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="消息"
+            android:textColor="#333333"
+            android:textSize="@dimen/sp_12" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/pop_shop_more_home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_14"
+        android:layout_marginTop="@dimen/dp_21"
+        android:layout_marginRight="@dimen/dp_13">
+
+        <ImageView
+            android:layout_width="@dimen/dp_17"
+            android:layout_height="@dimen/dp_16"
+            android:layout_centerVertical="true"
+            android:src="@drawable/icon_shouye11" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="首页"
+            android:textColor="#333333"
+            android:textSize="@dimen/sp_12" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/pop_shop_more_share"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_marginLeft="@dimen/dp_14"
+        android:layout_marginTop="@dimen/dp_21"
+        android:layout_marginRight="@dimen/dp_13">
+
+        <ImageView
+            android:layout_width="@dimen/dp_17"
+            android:layout_height="@dimen/dp_16"
+            android:layout_centerVertical="true"
+            android:src="@drawable/icon_fenxiang11" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="分享"
+            android:textColor="#333333"
+            android:textSize="@dimen/sp_12" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5f5f5"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_45"
+        android:layout_marginTop="@dimen/dp_25"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        <ImageView
+            android:id="@+id/user_search_back"
+            android:layout_width="@dimen/dp_36"
+            android:layout_height="@dimen/dp_44"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/dp_14"
+            android:src="@drawable/icon_fanhui" />
+
+        <EditText
+            android:id="@+id/user_search_edit"
+            android:layout_width="@dimen/dp_280"
+            android:layout_height="@dimen/dp_34"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/user_search_back"
+            android:background="@drawable/bg_edit17"
+            android:drawableLeft="@drawable/search"
+            android:drawablePadding="@dimen/dp_14"
+            android:hint="搜索想要剁手的商品"
+            android:paddingLeft="@dimen/dp_18"
+            android:textColorHint="#999999"
+            android:textCursorDrawable="@drawable/edit_cursor"
+            android:textSize="@dimen/sp_12" />
+
+        <TextView
+            android:id="@+id/user_search_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/user_search_edit"
+            android:padding="@dimen/dp_10"
+            android:text="搜索"
+            android:textColor="#222222"
+            android:textSize="@dimen/sp_14" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_16"
+            android:layout_marginTop="@dimen/dp_16"
+            android:text="历史搜索"
+            android:textColor="#222222"
+            android:textSize="@dimen/sp_12" />
+
+        <ImageView
+            android:id="@+id/user_search_delete"
+            android:layout_width="@dimen/dp_22"
+            android:layout_height="@dimen/dp_22"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/dp_16"
+            android:layout_marginRight="@dimen/dp_16"
+            android:padding="@dimen/dp_5"
+            android:src="@drawable/delete" />
+
+        <com.example.view.FlowLayout
+            android:id="@+id/user_search_flow_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/user_search_delete"></com.example.view.FlowLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

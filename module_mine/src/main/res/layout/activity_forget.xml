@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/page_top" />
+
+    <EditText
+        android:id="@+id/forget_phone"
+        android:layout_width="@dimen/dp_295"
+        android:layout_height="@dimen/dp_40"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dp_62"
+        android:background="@null"
+        android:drawableLeft="@drawable/icon_shoujihao"
+        android:drawablePadding="@dimen/dp_11"
+        android:hint="@string/input_phone"
+        android:inputType="number"
+        android:textColor="#333333"
+        android:textColorHint="#999999"
+        android:textCursorDrawable="@drawable/edit_cursor"
+        android:textSize="@dimen/sp_17" />
+
+
+    <View
+        android:layout_width="@dimen/dp_295"
+        android:layout_height="@dimen/dp_1"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dp_5"
+        android:background="#eeeeee" />
+
+    <LinearLayout
+        android:layout_width="@dimen/dp_295"
+        android:layout_height="@dimen/dp_55"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dp_10"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/forget_code"
+            android:layout_width="@dimen/dp_0"
+            android:layout_height="@dimen/dp_40"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="@null"
+            android:drawableLeft="@drawable/icon_yanzhengma"
+            android:drawablePadding="@dimen/dp_11"
+            android:hint="@string/input_code"
+            android:inputType="number"
+            android:textColor="#333333"
+            android:textColorHint="#999999"
+            android:textCursorDrawable="@drawable/edit_cursor"
+            android:textSize="@dimen/sp_17" />
+
+
+        <TextView
+            android:id="@+id/forget_get_code"
+            android:layout_width="@dimen/dp_70"
+            android:layout_height="@dimen/dp_27"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/bg_get_code"
+            android:gravity="center"
+            android:text="@string/get_code"
+            android:textColor="#fb4119"
+            android:textSize="@dimen/sp_11" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="@dimen/dp_295"
+        android:layout_height="@dimen/dp_1"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dp_5"
+        android:background="#eeeeee" />
+
+    <EditText
+        android:id="@+id/forget_paddword"
+        android:layout_width="@dimen/dp_295"
+        android:layout_height="@dimen/dp_40"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dp_19"
+        android:background="@null"
+        android:drawableLeft="@drawable/icon_shurumima"
+        android:drawablePadding="@dimen/dp_11"
+        android:hint="@string/input_new_password"
+        android:inputType="textPassword"
+        android:textColor="#333333"
+        android:textColorHint="#999999"
+        android:textCursorDrawable="@drawable/edit_cursor"
+        android:textSize="@dimen/sp_17" />
+
+    <View
+        android:layout_width="@dimen/dp_295"
+        android:layout_height="@dimen/dp_1"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dp_5"
+        android:background="#eeeeee" />
+
+    <EditText
+        android:id="@+id/forget_confirm_password"
+        android:layout_width="@dimen/dp_295"
+        android:layout_height="@dimen/dp_40"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dp_19"
+        android:background="@null"
+        android:drawableLeft="@drawable/icon_shurumima"
+        android:drawablePadding="@dimen/dp_11"
+        android:hint="@string/input_new_password_second"
+        android:inputType="textPassword"
+        android:textColor="#333333"
+        android:textColorHint="#999999"
+        android:textCursorDrawable="@drawable/edit_cursor"
+        android:textSize="@dimen/sp_17" />
+
+    <View
+        android:layout_width="@dimen/dp_295"
+        android:layout_height="@dimen/dp_1"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dp_5"
+        android:background="#eeeeee" />
+
+    <TextView
+        android:id="@+id/forget_btn"
+        android:layout_width="@dimen/dp_295"
+        android:layout_height="@dimen/dp_45"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dp_84"
+        android:background="@drawable/bg_btn_login"
+        android:gravity="center"
+        android:text="@string/confirm"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/sp_18" />
+
+    <View
+        android:layout_width="@dimen/dp_0"
+        android:layout_height="@dimen/dp_0"
+        android:layout_weight="1" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_146"
+        android:src="@drawable/background_wangji" />
+</LinearLayout>

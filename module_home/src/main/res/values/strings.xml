@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Module_Home</string>
+    <string name="punch_sign_gui_ze">参与签到活动每天可获得5个积分值，如连续签到满7天，第7天后将额外获取10个积分值</string>
+</resources>

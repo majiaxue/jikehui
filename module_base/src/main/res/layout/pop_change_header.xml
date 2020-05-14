@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorTransparency"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_rec5"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/pop_change_header_camera"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_45"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:text="拍照上传"
+            android:textColor="#000000"
+            android:textSize="@dimen/sp_14" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_1"
+            android:background="#eeeeee" />
+
+        <TextView
+            android:id="@+id/pop_change_header_xiangce"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_45"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:text="相册上传"
+            android:textColor="#000000"
+            android:textSize="@dimen/sp_14" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/pop_change_header_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_45"
+        android:layout_marginTop="@dimen/dp_10"
+        android:background="@drawable/bg_rec5"
+        android:gravity="center"
+        android:text="取消"
+        android:textColor="#000000"
+        android:textSize="@dimen/sp_14" />
+
+
+</LinearLayout>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+    <include layout="@layout/page_top" />
+    <LinearLayout
+        android:background="#f5f5f5"
+        android:layout_marginTop="@dimen/dp_30"
+        android:id="@+id/ll_kahao"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_47"
+        android:layout_marginLeft="@dimen/dp_15"
+        android:layout_marginRight="@dimen/dp_15"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="卡号"
+            android:textColor="#0c0c0c"
+            android:textSize="@dimen/sp_14" />
+
+        <View
+            android:layout_width="@dimen/dp_0"
+            android:layout_height="@dimen/dp_0"
+            android:layout_weight="1" />
+
+        <EditText
+            android:id="@+id/chunzhi_hao"
+            android:inputType="number"
+            android:digits="1234567890"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/dp_15"
+            android:background="@null"
+            android:gravity="center_vertical|right"
+            android:hint="请输入卡号"
+            android:textColor="#666666"
+            android:textColorHint="#80999999"
+            android:textSize="@dimen/sp_14" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="@dimen/dp_13"
+        android:id="@+id/ll_mima"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_47"
+        android:layout_marginLeft="@dimen/dp_15"
+        android:gravity="center_vertical"
+        android:background="#f5f5f5"
+        android:layout_marginRight="@dimen/dp_15"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="密码"
+            android:textColor="#0c0c0c"
+            android:textSize="@dimen/sp_14" />
+
+        <View
+            android:layout_width="@dimen/dp_0"
+            android:layout_height="@dimen/dp_0"
+            android:layout_weight="1" />
+
+        <EditText
+            android:inputType="number"
+            android:digits="1234567890"
+            android:id="@+id/chunzhi_psw"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/dp_15"
+            android:background="@null"
+            android:gravity="center_vertical|right"
+            android:hint="请输入密码"
+            android:textColor="#666666"
+            android:textColorHint="#80999999"
+            android:textSize="@dimen/sp_14" />
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/btn_jihuo"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_45"
+        android:layout_marginLeft="@dimen/dp_15"
+        android:layout_marginRight="@dimen/dp_15"
+        android:layout_marginTop="@dimen/dp_60"
+        android:text="充值"
+        android:background="@drawable/bg_btn_jihuo_red"
+        android:textSize="@dimen/sp_18"
+        android:textColor="@color/white"/>
+</LinearLayout>

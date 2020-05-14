@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/page_top" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/hgfgdgd"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="@dimen/dp_305"
+            android:layout_height="@dimen/dp_290"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dp_43"
+            android:background="@drawable/pop_clear_cache"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/dp_206"
+                android:layout_height="@dimen/dp_96"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dp_35"
+                android:src="@drawable/hgghf" />
+
+            <TextView
+                android:id="@+id/contact_us_phonenum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dp_35"
+                android:text="@string/service_phone"
+                android:textColor="#333333"
+                android:textSize="@dimen/sp_14" />
+
+            <TextView
+                android:visibility="gone"
+                android:layout_marginTop="@dimen/dp_3"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="01062873545"
+                android:textColor="#333333"
+                android:layout_marginLeft="@dimen/dp_38"
+                android:textSize="@dimen/sp_14"/>
+
+            <TextView
+                android:id="@+id/contact_us_call"
+                android:layout_width="@dimen/dp_257"
+                android:layout_height="@dimen/dp_44"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dp_27"
+                android:background="@drawable/bg_btn_login"
+                android:gravity="center"
+                android:text="联系客服"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/sp_18" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

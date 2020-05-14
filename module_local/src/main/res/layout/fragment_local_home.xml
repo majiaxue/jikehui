@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5f5f5">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_230"
+        android:scaleType="fitXY"
+        android:src="@drawable/background_local_home" />
+
+    <include
+        android:id="@+id/local_home_top"
+        layout="@layout/include_status" />
+
+    <RelativeLayout
+        android:id="@+id/local_home_rela"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/local_home_top"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/dp_5"
+        android:paddingBottom="@dimen/dp_5">
+
+        <LinearLayout
+            android:id="@+id/local_home_choose_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_15"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/local_home_city"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/sp_14" />
+
+            <ImageView
+                android:layout_width="@dimen/dp_14"
+                android:layout_height="@dimen/dp_17"
+                android:layout_marginLeft="@dimen/dp_7"
+                android:src="@drawable/icon_dingwei2" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="本地商城"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/sp_18" />
+
+        <ImageView
+            android:id="@+id/local_home_msg"
+            android:layout_width="@dimen/dp_29"
+            android:layout_height="@dimen/dp_30"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="@dimen/dp_19"
+            android:padding="@dimen/dp_6"
+            android:src="@drawable/read_message" />
+    </RelativeLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/local_home_rela"
+        android:overScrollMode="never">
+
+        <com.scwang.smartrefresh.layout.SmartRefreshLayout
+            android:id="@+id/local_home_refresh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/local_home_search"
+                    android:layout_width="@dimen/dp_344"
+                    android:layout_height="@dimen/dp_30"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:background="@drawable/bg_7_4df7f7f7"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="@dimen/dp_0"
+                        android:layout_height="@dimen/dp_0"
+                        android:layout_weight="1" />
+
+                    <ImageView
+                        android:layout_width="@dimen/dp_14"
+                        android:layout_height="@dimen/dp_14"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/icon_search3" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/dp_8"
+                        android:includeFontPadding="false"
+                        android:text="请输入商品名称或商店搜索"
+                        android:textColor="#fbd8b2"
+                        android:textSize="@dimen/sp_13" />
+
+                    <View
+                        android:layout_width="@dimen/dp_0"
+                        android:layout_height="@dimen/dp_0"
+                        android:layout_weight="1" />
+                </LinearLayout>
+
+                <com.stx.xhb.xbanner.XBanner
+                    android:id="@+id/local_home_xbanner"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_152"
+                    android:layout_marginTop="@dimen/dp_20"
+                    android:overScrollMode="never"
+                    android:scaleType="fitXY"
+                    app:clipChildrenLeftRightMargin="@dimen/dp_22"
+                    app:isAutoPlay="true"
+                    app:isClipChildrenMode="true"
+                    app:isClipChildrenModeLessThree="true"
+                    app:pointsVisibility="false"
+                    app:viewPagerClipChildren="true"
+                    app:viewpagerMargin="@dimen/dp_4" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/dp_23"
+                    android:background="#f5f5f5"
+                    android:orientation="vertical">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/local_home_navbar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_15"
+                        android:overScrollMode="never" />
+
+                    <ImageView
+                        android:visibility="gone"
+                        android:id="@+id/local_home_xiaochi"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_75"
+                        android:src="@drawable/local_img_jiechan" />
+
+                    <com.stx.xhb.xbanner.XBanner
+                        android:id="@+id/_local_home_zhong_banner"
+                        android:layout_width="@dimen/dp_345"
+                        android:layout_height="@dimen/dp_140"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/dp_20"
+                        app:pointContainerLeftRightPadding="@dimen/dp_0"
+                        app:pointLeftRightPadding="@dimen/dp_0"
+                        app:pointNormal="@drawable/bg_dcdcdc"
+                        app:pointSelect="@drawable/bg_fb4b18" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_220"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginLeft="@dimen/dp_10"
+                        android:layout_marginTop="@dimen/dp_20"
+                        android:layout_marginRight="@dimen/dp_10"
+                        android:background="@drawable/local_bendituijian"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/local_home_commend_shop"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dp_15"
+                            android:layout_marginTop="@dimen/dp_54"
+                            android:drawableRight="@drawable/youjiantou_bai"
+                            android:drawablePadding="@dimen/dp_6"
+                            android:text=""
+                            android:textColor="#ffffff"
+                            android:textSize="@dimen/sp_15" />
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/local_home_commend_rv"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dp_126"
+                            android:layout_marginLeft="@dimen/dp_15"
+                            android:layout_marginRight="@dimen/dp_5"
+                            android:layout_marginTop="@dimen/dp_8"
+                            android:overScrollMode="never" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/dp_25"
+                        android:src="@drawable/icon_fujinmendian" />
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_10"
+                        android:layout_marginTop="@dimen/dp_25"
+                        android:background="#f5f5f5" />
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/local_home_rv_shop"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <View
+                        android:layout_width="@dimen/dp_0"
+                        android:layout_height="@dimen/dp_20" />
+                </LinearLayout>
+            </LinearLayout>
+        </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+    </android.support.v4.widget.NestedScrollView>
+</RelativeLayout>

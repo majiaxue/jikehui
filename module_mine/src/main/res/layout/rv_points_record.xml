@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/dp_351"
+    android:layout_height="@dimen/dp_79"
+    android:background="@drawable/bg_5_fff">
+
+    <TextView
+        android:id="@+id/rv_points_record_temp1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_18"
+        android:layout_marginTop="@dimen/dp_20"
+        android:includeFontPadding="false"
+        android:text="奖励："
+        android:textColor="#333333"
+        android:textSize="@dimen/sp_16" />
+
+    <TextView
+        android:id="@+id/rv_points_record_money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/rv_points_record_temp1"
+        android:layout_toRightOf="@id/rv_points_record_temp1"
+        android:text="+1.00（签到）"
+        android:textColor="#fb3912"
+        android:textSize="@dimen/sp_16" />
+
+    <TextView
+        android:id="@+id/rv_points_record_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_18"
+        android:layout_marginTop="@dimen/dp_51"
+        android:text="2019-06-18  11:00:00"
+        android:textColor="#999999"
+        android:textSize="@dimen/sp_12" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/dp_18"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/rv_points_record_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="110"
+            android:textColor="#fb3912"
+            android:textSize="@dimen/sp_24"
+            android:visibility="gone" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_5"
+            android:text="（当前积分）"
+            android:textColor="#999999"
+            android:textSize="@dimen/sp_12"
+            android:visibility="gone" />
+    </LinearLayout>
+</RelativeLayout>

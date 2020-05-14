@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--仿淘宝头条 向上滚动视图——双行-->
+    <declare-styleable name="MarqueeViewUp">
+        <attr name="isSetAlphaAnim" format="boolean" /><!--是否显示淡入淡出动画-->
+        <attr name="interval" format="integer" /><!--切换间隔时间-->
+        <attr name="animDuration" format="integer" /><!--动画时间-->
+    </declare-styleable>
+    <!--自定义titleBar-->
+    <declare-styleable name="TitleBar">
+        <attr name="title_text" format="string"></attr>
+        <attr name="title_text_size" format="dimension"></attr>
+        <attr name="title_text_color" format="color"></attr>
+        <attr name="title_bg_color" format="color"></attr>
+
+
+        <attr name="left_btn_text" format="string"></attr>
+        <attr name="left_btn_text_size" format="dimension"></attr>
+        <attr name="left_btn_text_color" format="color"></attr>
+        <attr name="left_btn_bg_color" format="reference"></attr>
+
+        <attr name="right_btn_text" format="string"></attr>
+        <attr name="right_btn_text_size" format="dimension"></attr>
+        <attr name="right_btn_text_color" format="color"></attr>
+        <attr name="right_btn_bg_color" format="reference"></attr>
+
+        <attr name="hideLeftImBtn" format="boolean" />
+        <attr name="hideRightImBtn" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="TagFlowLayout">
+        <attr name="max_select" format="integer"></attr>
+        <attr name="tag_gravity">
+            <enum name="left" value="-1" />
+            <enum name="center" value="0" />
+            <enum name="right" value="1" />
+        </attr>
+    </declare-styleable>
+
+    <attr name="autoScaleTextViewStyle"/>
+    <declare-styleable name="AutoScaleTextView">
+        <attr name="minTextSize" format="dimension"/>
+    </declare-styleable>
+
+    <!--之前用过的自定义ratingBar样式 -->
+    <declare-styleable name="RatingBarView">
+
+        <attr name="starImageSize" format="dimension"/>
+        <attr name="starCount" format="integer"/>
+        <attr name="starEmpty" format="reference"/>
+        <attr name="starFill" format="reference"/>
+    </declare-styleable>
+
+    <!--侧边字母导航栏-->
+    <declare-styleable name="WaveSideBarView">
+        <attr name="sidebar_lazy_respond" format="boolean"/>
+        <attr name="sidebar_text_color" format="color"/>
+        <attr name="sidebar_max_offset" format="dimension"/>
+        <attr name="sidebar_position" format="enum">
+            <enum name="right" value="0"/>
+            <enum name="left" value="1"/>
+        </attr>
+        <attr name="sidebar_text_alignment" format="enum">
+            <enum name="center" value="0"/>
+            <enum name="left" value="1"/>
+            <enum name="right" value="2" />
+        </attr>
+    </declare-styleable>
+    <!--自定义搜索框-->
+    <declare-styleable name="SearchEditText">
+        <attr name="drawableDel" format="reference" />
+    </declare-styleable>
+
+</resources>

@@ -1,0 +1,162 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.module_mine">
+
+    <application
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:supportsRtl="true">
+        <activity
+            android:name="com.example.login.LoginActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.example.register.RegisterActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.example.forget.ForgetActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.example.code_login.CodeLoginActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.example.setting.SettingActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.example.update_password.UpdatePasswordActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.example.bind_wechat.BindWeChatActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.example.replace_phone.ReplacePhoneActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.example.login_wechat.LoginWeChatActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.example.predict.PredictActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.example.order.OrderActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.example.upgrade.UpGradeActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.example.fans_order.FansOrderActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.example.group_fans.GroupFansActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+
+        <activity
+            android:name="com.example.operator.OperatorActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.example.contact_us.ContactUsActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.example.help_center.HelpCenterActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.example.collection.CollectionActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.example.message_center.MessageCenterActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.example.browse_record.BrowseRecordActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.example.help_detail.HelpDetailActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.example.new_guide.NewGuideActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.example.balance.BalanceActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.example.message_list.MessageListActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.example.suggestion.SuggestionActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.example.suggestion_history.SuggestionHistoryActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.example.cashout.CashoutActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.example.message_detail.MessageDetailActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.example.invite_friends.InviteFriendsActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.example.up_pay.UpPayActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.example.user_agreement.UserAgreementActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.example.points.PointsActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.example.ali_account.AliAccountActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.example.points_mingxi.PointsMXActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.example.buy2up.Buy2UpActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.example.up_order_confirm.UpOrderConfirmActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.points.xinban.Points2Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.chunzhi.ChunZhiActivity"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>

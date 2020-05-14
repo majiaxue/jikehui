@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/dp_15"
+    android:layout_marginRight="@dimen/dp_15"
+    android:layout_marginTop="@dimen/dp_10"
+    android:background="@drawable/bg_10_fff"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/image1"
+            android:layout_width="@dimen/dp_14"
+            android:layout_height="@dimen/dp_13"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp_10"
+            android:src="@drawable/icon_dianpu15" />
+
+        <TextView
+            android:id="@+id/alteration_rec_shop_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_7"
+            android:layout_marginTop="@dimen/dp_8"
+            android:text="private简约男装"
+            android:textColor="#666666"
+            android:textSize="@dimen/sp_12" />
+
+    </LinearLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/alteration_child_rec"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/alteration_rec_shop_name" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_20"
+        android:layout_marginBottom="@dimen/dp_14"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dp_11"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/dp_19"
+                android:layout_height="@dimen/dp_19"
+                android:src="@drawable/icon_tuikuan" />
+
+            <TextView
+                android:id="@+id/alteration_rec_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_5"
+                android:layout_marginRight="@dimen/dp_5"
+                android:text="仅退款"
+                android:textColor="#666666"
+                android:textSize="@dimen/sp_12" />
+
+            <TextView
+                android:id="@+id/alteration_rec_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="退款成功"
+                android:textColor="#666666"
+                android:textSize="@dimen/sp_12" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="@dimen/dp_0"
+            android:layout_height="@dimen/dp_0_1"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/alteration_rec_view_details"
+            android:layout_width="@dimen/dp_73"
+            android:layout_height="@dimen/dp_23"
+            android:background="@drawable/bg_5_fd3c15_border"
+            android:gravity="center"
+            android:text="查看详情"
+            android:layout_marginRight="@dimen/dp_17"
+            android:textColor="#666666"
+            android:textSize="@dimen/sp_12" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

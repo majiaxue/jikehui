@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center">
+
+    <RelativeLayout
+        android:layout_width="@dimen/dp_167"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:background="@drawable/bg_rec5">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/rec_staggered_image"
+            android:layout_width="@dimen/dp_167"
+            android:layout_height="@dimen/dp_173"
+            android:scaleType="fitXY"
+            app:roundBottomLeft="false"
+            app:roundBottomRight="false"
+            app:roundTopLeft="true"
+            app:roundTopRight="true"
+            app:roundedCornerRadius="@dimen/dp_5" />
+
+        <TextView
+            android:id="@+id/rec_staggered_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rec_staggered_image"
+            android:layout_marginLeft="@dimen/dp_12"
+            android:layout_marginTop="@dimen/dp_5"
+            android:layout_marginRight="@dimen/dp_12"
+            android:ellipsize="end"
+            android:lines="2"
+            android:text="2019夏季新款纯棉白色短袖女T恤个性字母简约......"
+            android:textColor="#333333"
+            android:textSize="@dimen/sp_12" />
+
+        <TextView
+            android:id="@+id/rec_staggered_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rec_staggered_name"
+            android:layout_marginLeft="@dimen/dp_12"
+            android:layout_marginTop="@dimen/dp_10"
+            android:text="￥39.90"
+            android:textColor="#fd3c15"
+            android:textSize="@dimen/sp_12" />
+
+        <TextView
+            android:id="@+id/rec_staggered_payment_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rec_staggered_name"
+            android:layout_alignTop="@id/rec_staggered_price"
+            android:layout_marginLeft="@dimen/dp_35"
+            android:layout_toRightOf="@id/rec_staggered_price"
+            android:text="12345人付款"
+            android:textColor="#999999"
+            android:textSize="@dimen/sp_10" />
+
+        <TextView
+            android:id="@+id/rec_staggered_shop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rec_staggered_price"
+            android:layout_marginLeft="@dimen/dp_12"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_marginBottom="@dimen/dp_11"
+            android:text="班迪卡旗舰店"
+            android:textColor="#fd3c15"
+            android:textSize="@dimen/sp_12" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

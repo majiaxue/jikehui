@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/page_top" />
+
+    <ImageView
+        android:layout_width="@dimen/dp_151"
+        android:layout_height="@dimen/dp_151"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dp_33"
+        android:src="@drawable/img_zhifuchenggong" />
+
+    <TextView
+        android:id="@+id/pay_success_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dp_33"
+        android:text="支付成功￥299"
+        android:textColor="@color/codeText"
+        android:textSize="@dimen/sp_17" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_28"
+        android:layout_marginTop="@dimen/dp_40"
+        android:layout_marginRight="@dimen/dp_28"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/pay_success_order"
+            android:layout_width="@dimen/dp_151"
+            android:layout_height="@dimen/dp_39"
+            android:background="@drawable/bg_5_fd3c15"
+            android:gravity="center"
+            android:text="查看订单"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/sp_14" />
+
+        <View
+            android:layout_width="@dimen/dp_0"
+            android:layout_height="@dimen/dp_0"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/pay_success_home"
+            android:layout_width="@dimen/dp_151"
+            android:layout_height="@dimen/dp_39"
+            android:background="@drawable/bg_5_999_border"
+            android:gravity="center"
+            android:text="返回首页"
+            android:textColor="#999999"
+            android:textSize="@dimen/sp_14" />
+    </LinearLayout>
+</LinearLayout>

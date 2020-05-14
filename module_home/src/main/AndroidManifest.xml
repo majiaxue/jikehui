@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.module_home">
+
+    <application
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:allowBackup">
+
+        <activity
+            android:name="com.example.flashsale.FlashSaleActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.productcenter.ProductCenterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.productdetail.ProductDetailActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.example.universallist.UniversalListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.shakestock.ShakeStockActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.freecharge.FreeChargeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.punchsign.PunchSignActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.secondarydetails.SecondaryDetailsActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.main.MainActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.search.SearchActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.main.GuideActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.example.main.WelcomeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

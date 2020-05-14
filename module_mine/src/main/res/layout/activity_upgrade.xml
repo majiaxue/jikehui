@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/page_top" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/fgfgfd">
+
+            <ImageView
+                android:id="@+id/upgrade_temp"
+                android:layout_width="@dimen/dp_239"
+                android:layout_height="@dimen/dp_25"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dp_147"
+                android:src="@drawable/ghfghfg" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/upgrade_rv"
+                android:layout_width="@dimen/dp_346"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/upgrade_temp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dp_39"/>
+        </RelativeLayout>
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

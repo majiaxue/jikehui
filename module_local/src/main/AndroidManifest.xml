@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.module_local">
+
+    <application
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:allowBackup">
+
+        <activity
+            android:name="com.example.local_main.LocalMainActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.example.coupon_wallet.CouponWalletActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.example.local_order_detail.LocalOrderDetailActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.example.local_order_confirm.LocalOrderConfirmActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.example.local_goods_detail.LocalGoodsDetailActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.example.local_store.LocalStoreActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.example.order_info.OrderInfoActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.example.local_payment.LocalPaymentActivity"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.example.view.WindowInsetsFrameLayout
+        android:id="@+id/local_main_frame"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_0"
+        android:layout_weight="1" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:background="#eeeeee" />
+
+    <RadioGroup
+        android:id="@+id/local_main_radiogroup"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_47"
+        android:layout_alignParentBottom="true"
+        android:background="#FFFFFF"
+        android:clipChildren="false"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/local_main_home"
+            android:layout_width="@dimen/dp_0"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:checked="true"
+            android:drawableTop="@drawable/select_local_home"
+            android:gravity="center"
+            android:paddingTop="@dimen/dp_7"
+            android:text="首页"
+            android:textColor="@color/color_333_fc6117"
+            android:textSize="@dimen/sp_14" />
+
+        <RadioButton
+            android:id="@+id/local_main_order"
+            android:layout_width="@dimen/dp_0"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/select_local_order"
+            android:gravity="center"
+            android:paddingTop="@dimen/dp_7"
+            android:text="订单"
+            android:textColor="@color/color_333_fc6117"
+            android:textSize="@dimen/sp_14" />
+
+        <RadioButton
+            android:id="@+id/local_main_mine"
+            android:layout_width="@dimen/dp_0"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/select_local_mine"
+            android:gravity="center"
+            android:paddingTop="@dimen/dp_7"
+            android:text="我的"
+            android:textColor="@color/color_333_fc6117"
+            android:textSize="@dimen/sp_14" />
+
+    </RadioGroup>
+</LinearLayout>

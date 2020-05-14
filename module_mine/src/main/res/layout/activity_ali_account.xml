@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/page_top" />
+
+    <EditText
+        android:id="@+id/ali_account_name"
+        android:layout_width="@dimen/dp_351"
+        android:layout_height="@dimen/dp_50"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dp_13"
+        android:background="@drawable/bg_4_fff"
+        android:gravity="center_vertical"
+        android:hint="请输入账户姓名"
+        android:paddingLeft="@dimen/dp_19"
+        android:textColor="#333333"
+        android:textColorHint="#999999"
+        android:textCursorDrawable="@drawable/edit_cursor"
+        android:textSize="@dimen/sp_14" />
+
+    <EditText
+        android:id="@+id/ali_account_account"
+        android:layout_width="@dimen/dp_351"
+        android:layout_height="@dimen/dp_50"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dp_10"
+        android:background="@drawable/bg_4_fff"
+        android:gravity="center_vertical"
+        android:hint="请输入支付宝账户"
+        android:paddingLeft="@dimen/dp_19"
+        android:textColor="#333333"
+        android:textColorHint="#999999"
+        android:textCursorDrawable="@drawable/edit_cursor"
+        android:textSize="@dimen/sp_14" />
+
+    <View
+        android:layout_width="@dimen/dp_0"
+        android:layout_height="@dimen/dp_0"
+        android:layout_weight="1" />
+
+    <TextView
+        android:id="@+id/ali_account_btn"
+        android:layout_width="@dimen/dp_351"
+        android:layout_height="@dimen/dp_45"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/dp_27"
+        android:background="@drawable/bg_22_feb_fb4"
+        android:gravity="center"
+        android:text="确定"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/sp_16" />
+</LinearLayout>

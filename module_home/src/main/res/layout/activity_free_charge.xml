@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5f5f5"
+    android:orientation="vertical"
+    tools:context="com.example.freecharge.FreeChargeActivity">
+
+    <include layout="@layout/page_top" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_256"
+        android:src="@drawable/bg_0yuangou" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/free_charge_activity"
+            android:layout_width="@dimen/dp_0"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/free_charge_activity_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_19"
+                android:text="免单活动"
+                android:textColor="#999999"
+                android:textSize="@dimen/dp_16" />
+
+            <View
+                android:id="@+id/free_charge_activity_view"
+                android:layout_width="@dimen/dp_63"
+                android:layout_height="@dimen/dp_3"
+                android:layout_marginTop="@dimen/dp_10"
+                android:background="#fb3912" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/free_charge_look_back"
+            android:layout_width="@dimen/dp_0"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/free_charge_look_back_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_19"
+                android:text="往期回顾"
+                android:textColor="#999999"
+                android:textSize="@dimen/dp_16" />
+
+            <View
+                android:id="@+id/free_charge_look_back_view"
+                android:layout_width="@dimen/dp_63"
+                android:layout_height="@dimen/dp_3"
+                android:layout_marginTop="@dimen/dp_10"
+                android:background="#fb3912"
+                android:visibility="invisible" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:background="#dedede" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/free_charge_rec"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:id="@+id/free_charge_on_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/img_meiyoumiandan"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/dp_50"/>
+
+</LinearLayout>

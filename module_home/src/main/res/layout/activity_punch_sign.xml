@@ -1,0 +1,601 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_qiandao1"
+    android:orientation="vertical"
+    tools:context="com.example.punchsign.PunchSignActivity">
+
+    <include layout="@layout/include_status" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_45">
+
+        <ImageView
+            android:id="@+id/punch_sign_image"
+            android:layout_width="@dimen/dp_28"
+            android:layout_height="@dimen/dp_36"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_5"
+            android:padding="@dimen/dp_10"
+            android:src="@drawable/icon_fanhui_bai" />
+
+        <TextView
+            android:id="@+id/punch_sign_gui_ze"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dp_15"
+            android:drawableLeft="@drawable/icon_guize111"
+            android:drawablePadding="@dimen/dp_5"
+            android:text="查看签到规则"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/sp_14" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/dp_260"
+                android:layout_height="@dimen/dp_110"
+                android:layout_marginTop="@dimen/dp_30"
+                android:src="@drawable/img_wenzi" />
+
+            <LinearLayout
+                android:layout_width="@dimen/dp_231"
+                android:layout_height="@dimen/dp_157"
+                android:layout_marginTop="@dimen/sp_26"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:background="@drawable/img_qianbao">
+
+                <TextView
+                    android:id="@+id/punch_sign_ji_fen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_33"
+                    android:includeFontPadding="false"
+                    android:textColor="#8928c2"
+                    android:textSize="@dimen/sp_40"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:includeFontPadding="true"
+                    android:text="我的积分"
+                    android:textColor="#c74111"
+                    android:textSize="@dimen/sp_14" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/punch_sign_bottom_qian_dao"
+                android:layout_width="@dimen/dp_346"
+                android:layout_height="@dimen/dp_40"
+                android:layout_marginTop="@dimen/dp_11"
+                android:scaleType="centerCrop"
+                android:src="@drawable/button_qiandao1" />
+
+            <LinearLayout
+                android:layout_width="@dimen/dp_293"
+                android:layout_height="@dimen/dp_30"
+                android:layout_marginTop="@dimen/dp_26"
+                android:background="@drawable/bg_red_15_ff4800"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:includeFontPadding="false"
+                    android:text="您已连续签到"
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/sp_14" />
+
+                <TextView
+                    android:id="@+id/punch_sign_several_days"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:includeFontPadding="false"
+                    android:textColor="#fcf904"
+                    android:textSize="@dimen/sp_14"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:includeFontPadding="false"
+                    android:text="天，获得"
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/sp_14" />
+
+                <TextView
+                    android:id="@+id/punch_sign_ji_fen_zhi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:includeFontPadding="false"
+                    android:textColor="#fcf904"
+                    android:textSize="@dimen/sp_14"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:includeFontPadding="false"
+                    android:text="积分值"
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/sp_14" />
+
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="@dimen/dp_346"
+                android:layout_height="@dimen/dp_97"
+                android:layout_marginTop="@dimen/dp_10"
+                android:background="@drawable/bg_xinshourenwu">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:includeFontPadding="false"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:text="每日任务"
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/sp_15" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_80"
+                    android:layout_alignParentBottom="true">
+
+                    <TextView
+                        android:id="@+id/punch_sign_text1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/dp_18"
+                        android:includeFontPadding="false"
+                        android:textColor="#c74111"
+                        android:textSize="@dimen/sp_30"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/dp_23"
+                        android:layout_toRightOf="@id/punch_sign_text1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="每日浏览一件商品"
+                            android:textColor="#c74111"
+                            android:textSize="@dimen/sp_13" />
+
+                        <TextView
+                            android:id="@+id/punch_sign_text11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="完成0/1"
+                            android:textColor="#c74111"
+                            android:textSize="@dimen/sp_13" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/punch_sign_text111"
+                        android:layout_width="@dimen/dp_76"
+                        android:layout_height="@dimen/dp_31"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/dp_27"
+                        android:background="@drawable/button_lingrenwu"
+                        android:gravity="center_horizontal"
+                        android:paddingTop="@dimen/dp_3"
+                        android:text="去完成"
+                        android:textColor="#ec4002"
+                        android:textSize="@dimen/sp_13" />
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="@dimen/dp_346"
+                android:layout_height="@dimen/dp_80"
+                android:layout_marginTop="@dimen/dp_10"
+                android:background="@drawable/bg_radius10_fff1e3">
+
+                <TextView
+                    android:id="@+id/punch_sign_text2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dp_18"
+                    android:includeFontPadding="false"
+                    android:textColor="#c74111"
+                    android:textSize="@dimen/sp_30"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dp_23"
+                    android:layout_toRightOf="@id/punch_sign_text2"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/punch_sign_text2222"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="每日浏览五件商品以上"
+                        android:textColor="#c74111"
+                        android:textSize="@dimen/sp_13" />
+
+                    <TextView
+                        android:id="@+id/punch_sign_text22"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="完成0/5"
+                        android:textColor="#c74111"
+                        android:textSize="@dimen/sp_13" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/punch_sign_text222"
+                    android:layout_width="@dimen/dp_76"
+                    android:layout_height="@dimen/dp_31"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/dp_27"
+                    android:background="@drawable/button_lingrenwu"
+                    android:gravity="center_horizontal"
+                    android:paddingTop="@dimen/dp_3"
+                    android:text="去完成"
+                    android:textColor="#ec4002"
+                    android:textSize="@dimen/sp_13" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="@dimen/dp_346"
+                android:layout_height="@dimen/dp_80"
+                android:layout_marginTop="@dimen/dp_10"
+                android:background="@drawable/bg_radius10_fff1e3">
+
+                <TextView
+                    android:id="@+id/punch_sign_text3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dp_18"
+                    android:includeFontPadding="false"
+                    android:textColor="#c74111"
+                    android:textSize="@dimen/sp_30"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dp_23"
+                    android:layout_toRightOf="@id/punch_sign_text3"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/punch_sign_text3333"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="每日分享一件商品，上限3次"
+                        android:textColor="#c74111"
+                        android:textSize="@dimen/sp_13" />
+
+                    <TextView
+                        android:id="@+id/punch_sign_text33"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="完成0/3"
+                        android:textColor="#c74111"
+                        android:textSize="@dimen/sp_13" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/punch_sign_text333"
+                    android:layout_width="@dimen/dp_76"
+                    android:layout_height="@dimen/dp_31"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/dp_27"
+                    android:background="@drawable/button_lingrenwu"
+                    android:gravity="center_horizontal"
+                    android:paddingTop="@dimen/dp_3"
+                    android:text="去完成"
+                    android:textColor="#ec4002"
+                    android:textSize="@dimen/sp_13" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="@dimen/dp_346"
+                android:layout_height="@dimen/dp_80"
+                android:layout_marginTop="@dimen/dp_10"
+                android:background="@drawable/bg_radius10_fff1e3">
+
+                <TextView
+                    android:id="@+id/punch_sign_text4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dp_18"
+                    android:includeFontPadding="false"
+                    android:textColor="#c74111"
+                    android:textSize="@dimen/sp_30"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dp_23"
+                    android:layout_toRightOf="@id/punch_sign_text4"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/punch_sign_text4444"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="每日邀请5个好友注册"
+                        android:textColor="#c74111"
+                        android:textSize="@dimen/sp_13" />
+
+                    <TextView
+                        android:id="@+id/punch_sign_text44"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="完成0/3"
+                        android:textColor="#c74111"
+                        android:textSize="@dimen/sp_13" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/punch_sign_text444"
+                    android:layout_width="@dimen/dp_76"
+                    android:layout_height="@dimen/dp_31"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/dp_27"
+                    android:background="@drawable/button_lingrenwu"
+                    android:gravity="center_horizontal"
+                    android:paddingTop="@dimen/dp_3"
+                    android:text="去完成"
+                    android:textColor="#ec4002"
+                    android:textSize="@dimen/sp_13" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="@dimen/dp_346"
+                android:layout_height="@dimen/dp_97"
+                android:layout_marginTop="@dimen/dp_10"
+                android:background="@drawable/bg_xinshourenwu">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:includeFontPadding="false"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:text="新手任务"
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/sp_15" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_80"
+                    android:layout_alignParentBottom="true">
+
+                    <TextView
+                        android:id="@+id/punch_sign_text5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/dp_18"
+                        android:includeFontPadding="false"
+                        android:textColor="#c74111"
+                        android:textSize="@dimen/sp_30"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/dp_23"
+                        android:layout_toRightOf="@id/punch_sign_text5"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="首次下单"
+                            android:textColor="#c74111"
+                            android:textSize="@dimen/sp_13" />
+
+                        <TextView
+                            android:id="@+id/punch_sign_text55"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="完成0/1"
+                            android:textColor="#c74111"
+                            android:textSize="@dimen/sp_13" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/punch_sign_text555"
+                        android:layout_width="@dimen/dp_76"
+                        android:layout_height="@dimen/dp_31"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/dp_27"
+                        android:background="@drawable/button_lingrenwu"
+                        android:gravity="center_horizontal"
+                        android:paddingTop="@dimen/dp_3"
+                        android:text="去完成"
+                        android:textColor="#ec4002"
+                        android:textSize="@dimen/sp_13" />
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="@dimen/dp_346"
+                android:layout_height="@dimen/dp_80"
+                android:layout_marginTop="@dimen/dp_10"
+                android:background="@drawable/bg_radius10_fff1e3">
+
+                <TextView
+                    android:id="@+id/punch_sign_text6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dp_18"
+                    android:includeFontPadding="false"
+                    android:textColor="#c74111"
+                    android:textSize="@dimen/sp_30"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dp_23"
+                    android:layout_toRightOf="@id/punch_sign_text6"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/punch_sign_text6666"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="有效订单(自购或分享)"
+                        android:textColor="#c74111"
+                        android:textSize="@dimen/sp_13" />
+
+                    <TextView
+                        android:id="@+id/punch_sign_text66"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="完成0/1"
+                        android:textColor="#c74111"
+                        android:textSize="@dimen/sp_13" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/punch_sign_text666"
+                    android:layout_width="@dimen/dp_76"
+                    android:layout_height="@dimen/dp_31"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/dp_27"
+                    android:background="@drawable/button_lingrenwu"
+                    android:gravity="center_horizontal"
+                    android:paddingTop="@dimen/dp_3"
+                    android:text="去完成"
+                    android:textColor="#ec4002"
+                    android:textSize="@dimen/sp_13" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="@dimen/dp_346"
+                android:layout_height="@dimen/dp_80"
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_marginBottom="@dimen/dp_34"
+                android:background="@drawable/bg_radius10_fff1e3">
+
+                <TextView
+                    android:id="@+id/punch_sign_text7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dp_18"
+                    android:includeFontPadding="false"
+                    android:textColor="#c74111"
+                    android:textSize="@dimen/sp_30"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dp_23"
+                    android:layout_toRightOf="@id/punch_sign_text7"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/punch_sign_text7777"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="邀请粉丝5人以上"
+                        android:textColor="#c74111"
+                        android:textSize="@dimen/sp_13" />
+
+                    <TextView
+                        android:id="@+id/punch_sign_text77"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="完成0/5"
+                        android:textColor="#c74111"
+                        android:textSize="@dimen/sp_13" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/punch_sign_text777"
+                    android:layout_width="@dimen/dp_76"
+                    android:layout_height="@dimen/dp_31"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/dp_27"
+                    android:background="@drawable/button_lingrenwu"
+                    android:gravity="center_horizontal"
+                    android:paddingTop="@dimen/dp_3"
+                    android:text="去完成"
+                    android:textColor="#ec4002"
+                    android:textSize="@dimen/sp_13" />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

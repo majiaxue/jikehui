@@ -1,0 +1,48 @@
+﻿{
+  "classify": [
+    {
+      "name": "女装",
+      "id": 0,
+      "listId": 2
+    },
+    {
+      "name": "男装",
+      "id": 1,
+      "listId": 6
+    },
+    {
+      "name": "食品",
+      "id": 2,
+      "listId": 3
+    },
+    {
+      "name": "居家",
+      "id": 3,
+      "listId": 4
+    },
+    {
+      "name": "鞋品",
+      "id": 4,
+      "listId": 9
+    },
+    {
+      "name": "母婴",
+      "id": 5,
+      "listId": 1
+    },
+    {
+      "name": "数码",
+      "id": 6,
+      "listId": 11
+    },
+    {
+      "name": "美妆",
+      "id": 7,
+      "listId": 5
+    },{
+      "name": "百货",
+      "id": 8,
+      "listId": 12
+    }
+  ]
+}

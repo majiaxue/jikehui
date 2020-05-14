@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.flashsale.FlashSaleActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_211"
+        android:scaleType="fitXY"
+        android:src="@drawable/bg_xianshiqianggou" />
+
+    <include
+        android:id="@+id/flash_sale_include"
+        layout="@layout/include_status" />
+
+    <RelativeLayout
+        android:id="@+id/flash_sale_relative"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_45"
+        android:layout_below="@id/flash_sale_include">
+
+        <ImageView
+            android:id="@+id/flash_sale_back"
+            android:layout_width="@dimen/dp_28"
+            android:layout_height="@dimen/dp_36"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_5"
+            android:padding="@dimen/dp_10"
+            android:src="@drawable/icon_fanhui_bai" />
+
+        <ImageView
+            android:layout_width="@dimen/dp_72"
+            android:layout_height="@dimen/dp_18"
+            android:layout_centerInParent="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/xianshiqianggou" />
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/flash_sale_time_rec"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/flash_sale_relative"
+        android:overScrollMode="never" />
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/flash_sale_smart_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/flash_sale_time_rec">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/flash_sale_goods_rec"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:overScrollMode="never" />
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_79"
+    android:background="@drawable/bg_5_fff">
+
+    <TextView
+        android:id="@+id/rv_cashout_record_temp1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_18"
+        android:layout_marginTop="@dimen/dp_20"
+        android:text="提现："
+        android:textColor="#333333"
+        android:textSize="@dimen/sp_16" />
+
+    <TextView
+        android:id="@+id/rv_cashout_record_money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/rv_cashout_record_temp1"
+        android:layout_toRightOf="@id/rv_cashout_record_temp1"
+        android:text="1000.00"
+        android:textColor="#fb3912"
+        android:textSize="@dimen/sp_16" />
+
+    <TextView
+        android:id="@+id/rv_cashout_record_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/rv_cashout_record_temp1"
+        android:layout_marginTop="@dimen/dp_51"
+        android:text="2019-06-18  11:00:00"
+        android:textColor="#999999"
+        android:textSize="@dimen/sp_12" />
+</RelativeLayout>

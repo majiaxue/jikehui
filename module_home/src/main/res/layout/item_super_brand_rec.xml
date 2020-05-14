@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/dp_10"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/super_brand_rec_image"
+        android:layout_width="@dimen/dp_37"
+        android:layout_height="@dimen/dp_37"
+        app:roundAsCircle="true" />
+
+    <TextView
+        android:id="@+id/super_brand_rec_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp_10"
+        android:gravity="center"
+        android:lines="1"
+        android:ellipsize="end"
+        android:text="兰蔻"
+        android:textColor="#333333"
+        android:textSize="@dimen/sp_9" />
+
+    <TextView
+        android:id="@+id/super_brand_rec_average"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="平均返佣10%"
+        android:textColor="#999999"
+        android:textSize="@dimen/sp_12"
+        android:visibility="gone"/>
+
+
+</LinearLayout>

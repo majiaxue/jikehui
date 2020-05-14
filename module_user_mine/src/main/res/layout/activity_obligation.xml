@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.obligation.ObligationActivity">
+
+    <include layout="@layout/page_top" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/obligation_relative"
+                android:layout_width="@dimen/dp_362"
+                android:layout_height="@dimen/dp_104"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/background_dizhi">
+
+                <TextView
+                    android:id="@+id/obligation_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_20"
+                    android:layout_marginTop="@dimen/dp_22"
+                    android:includeFontPadding="false"
+                    android:textColor="#333333"
+                    android:textSize="@dimen/sp_15" />
+
+                <TextView
+                    android:id="@+id/obligation_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/obligation_name"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_toRightOf="@id/obligation_name"
+                    android:includeFontPadding="false"
+                    android:textColor="#333333"
+                    android:textSize="@dimen/sp_15" />
+
+                <TextView
+                    android:id="@+id/obligation_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/obligation_name"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="@dimen/dp_29"
+                    android:includeFontPadding="false"
+                    android:textColor="#333333"
+                    android:textSize="@dimen/sp_14" />
+
+                <ImageView
+                    android:layout_width="@dimen/dp_8"
+                    android:layout_height="@dimen/dp_16"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/dp_18"
+                    android:src="@drawable/icon_gengduo2" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_12"
+                android:layout_marginTop="@dimen/dp_15"
+                android:layout_marginRight="@dimen/dp_12"
+                android:background="@drawable/bg_10_fff">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/obligation_goods_rec"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_15"
+                    android:layout_marginRight="@dimen/dp_15"></android.support.v7.widget.RecyclerView>
+
+                <TextView
+                    android:id="@+id/obligation_text1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/obligation_goods_rec"
+                    android:layout_marginLeft="@dimen/dp_8"
+                    android:layout_marginTop="@dimen/dp_25"
+                    android:text="商品金额"
+                    android:textColor="#333333"
+                    android:textSize="@dimen/sp_12" />
+
+                <TextView
+                    android:id="@+id/obligation_goods_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/obligation_text1"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/dp_8"
+                    android:text="￥0.00"
+                    android:textColor="#e85130"
+                    android:textSize="@dimen/sp_12" />
+
+                <TextView
+                    android:id="@+id/obligation_text2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/obligation_text1"
+                    android:layout_marginLeft="@dimen/dp_8"
+                    android:layout_marginTop="@dimen/dp_25"
+                    android:text="运      费"
+                    android:textColor="#333333"
+                    android:textSize="@dimen/sp_12" />
+
+                <TextView
+                    android:id="@+id/obligation_freight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/obligation_text2"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/dp_8"
+                    android:text="+￥0.00"
+                    android:textColor="#e85130"
+                    android:textSize="@dimen/sp_12" />
+
+                <TextView
+                    android:id="@+id/obligation_text3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/obligation_text2"
+                    android:layout_marginLeft="@dimen/dp_8"
+                    android:layout_marginTop="@dimen/dp_25"
+                    android:text="优惠券"
+                    android:textColor="#333333"
+                    android:textSize="@dimen/sp_12" />
+
+                <TextView
+                    android:id="@+id/obligation_coupon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/obligation_text3"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/dp_8"
+                    android:text="-￥0.00"
+                    android:textColor="#e85130"
+                    android:textSize="@dimen/sp_12" />
+
+                <View
+                    android:id="@+id/view"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_0_1"
+                    android:layout_below="@id/obligation_text3"
+                    android:layout_marginTop="@dimen/dp_15"
+                    android:background="#ececec" />
+
+                <TextView
+                    android:id="@+id/obligation_text4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/view"
+                    android:layout_marginLeft="@dimen/dp_8"
+                    android:layout_marginTop="@dimen/dp_15"
+                    android:layout_marginBottom="@dimen/dp_20"
+                    android:text="待付款"
+                    android:textColor="#e85130"
+                    android:textSize="@dimen/sp_13" />
+
+                <TextView
+                    android:id="@+id/obligation_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/obligation_text4"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/dp_8"
+                    android:text="￥0.00"
+                    android:textColor="#e85130"
+                    android:textSize="@dimen/sp_13" />
+
+            </RelativeLayout>
+
+
+            <ImageView
+                android:layout_width="@dimen/dp_106"
+                android:layout_height="@dimen/dp_14"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dp_20"
+                android:layout_marginBottom="@dimen/dp_15"
+                android:src="@drawable/icon_weinituijian" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/obligation_rec"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_47"
+        android:background="#FFFFFF"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/obligation_time_remaining"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_15"
+            android:textColor="#e85130"
+            android:textSize="@dimen/sp_14" />
+
+        <View
+            android:layout_width="@dimen/dp_0"
+            android:layout_height="@dimen/dp_0_1"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/obligation_cancellation_order"
+            android:layout_width="@dimen/dp_68"
+            android:layout_height="@dimen/dp_25"
+            android:background="@drawable/bg_linear5f5"
+            android:gravity="center"
+            android:text="取消订单"
+            android:textColor="#666666"
+            android:textSize="@dimen/sp_14" />
+
+        <TextView
+            android:id="@+id/obligation_payment"
+            android:layout_width="@dimen/dp_68"
+            android:layout_height="@dimen/dp_25"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginRight="@dimen/dp_15"
+            android:background="@drawable/button_jiesuan"
+            android:gravity="center"
+            android:text="付款"
+            android:textColor="#fefefe"
+            android:textSize="@dimen/sp_14" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

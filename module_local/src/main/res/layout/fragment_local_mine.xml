@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff4f0"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/local_mine_temp2"
+        layout="@layout/include_status" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_220"
+        android:scaleType="fitXY"
+        android:src="@drawable/background_local_home" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/local_mine_temp2"
+        android:overScrollMode="never">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:id="@+id/local_mine_setting"
+                android:layout_width="@dimen/dp_28"
+                android:layout_height="@dimen/dp_28"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginTop="@dimen/dp_10"
+                android:padding="@dimen/dp_5"
+                android:src="@drawable/icon_shezhi"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/local_mine_msg"
+                android:layout_width="@dimen/dp_30"
+                android:layout_height="@dimen/dp_30"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_20"
+                android:padding="@dimen/dp_5"
+                android:src="@drawable/icon_xiaoxi"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/local_mine_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_15"
+                android:layout_marginTop="@dimen/dp_67"
+                android:includeFontPadding="false"
+                android:text="打发斯蒂芬"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/sp_26" />
+
+            <TextView
+                android:id="@+id/local_mine_uid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/local_mine_name"
+                android:layout_marginLeft="@dimen/dp_15"
+                android:layout_marginTop="@dimen/dp_10"
+                android:background="@drawable/bg_10_4dffffff"
+                android:paddingLeft="@dimen/dp_15"
+                android:paddingTop="@dimen/dp_5"
+                android:paddingRight="@dimen/dp_15"
+                android:paddingBottom="@dimen/dp_5"
+                android:text="UID:51201"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/sp_12" />
+
+            <ImageView
+                android:id="@+id/local_mine_header"
+                android:layout_width="@dimen/dp_81"
+                android:layout_height="@dimen/dp_81"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="@dimen/dp_60"
+                android:layout_marginRight="@dimen/dp_15"
+                android:src="@drawable/icon_touxiang1" />
+
+            <ImageView
+                android:id="@+id/local_mine_temp1"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_100"
+                android:layout_below="@id/local_mine_header"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginTop="@dimen/dp_5"
+                android:layout_marginRight="@dimen/dp_10"
+                android:src="@drawable/local_mine_img1" />
+
+            <com.stx.xhb.xbanner.XBanner
+                android:id="@+id/local_mine_xbanner"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_150"
+                android:layout_below="@id/local_mine_temp1"
+                android:layout_marginTop="@dimen/dp_30"
+                app:clipChildrenLeftRightMargin="@dimen/dp_87"
+                app:clipChildrenTopBottomMargin="@dimen/dp_0"
+                app:isAutoPlay="true"
+                app:isClipChildrenMode="true"
+                app:isClipChildrenModeLessThree="true"
+                app:isHandLoop="true"
+                app:pointsVisibility="false"
+                app:viewPagerClipChildren="true"
+                app:viewpagerMargin="@dimen/dp_15" />
+
+            <LinearLayout
+                android:id="@+id/local_mine_youhuiquan"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_50"
+                android:layout_below="@id/local_mine_xbanner"
+                android:layout_marginTop="@dimen/dp_30"
+                android:background="#ffffff"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/dp_18"
+                    android:layout_height="@dimen/dp_14"
+                    android:layout_marginLeft="@dimen/dp_15"
+                    android:src="@drawable/icon_youhuiquan2" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_12"
+                    android:text="优惠券"
+                    android:textColor="#333333"
+                    android:textSize="@dimen/sp_14" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/local_mine_shouhuodizhi"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_50"
+                android:layout_below="@id/local_mine_youhuiquan"
+                android:layout_marginTop="@dimen/dp_2"
+                android:background="#ffffff"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/dp_18"
+                    android:layout_height="@dimen/dp_19"
+                    android:layout_marginLeft="@dimen/dp_15"
+                    android:src="@drawable/icon_dingwei2" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_12"
+                    android:text="收货地址"
+                    android:textColor="#333333"
+                    android:textSize="@dimen/sp_14" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/local_mine_shangjiaruzhu"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_50"
+                android:layout_below="@id/local_mine_shouhuodizhi"
+                android:layout_marginTop="@dimen/dp_2"
+                android:background="#ffffff"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/dp_18"
+                    android:layout_height="@dimen/dp_15"
+                    android:layout_marginLeft="@dimen/dp_15"
+                    android:src="@drawable/shangjiaruzhu" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_12"
+                    android:text="商家入驻"
+                    android:textColor="#333333"
+                    android:textSize="@dimen/sp_14" />
+            </LinearLayout>
+        </RelativeLayout>
+    </android.support.v4.widget.NestedScrollView>
+</RelativeLayout>

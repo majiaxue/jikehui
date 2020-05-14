@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/dp_335"
+    android:layout_height="@dimen/dp_90"
+    android:background="@drawable/local_coupon_bg">
+
+    <TextView
+        android:id="@+id/rv_coupon_wallet_temp1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_55"
+        android:layout_marginTop="@dimen/dp_35"
+        android:includeFontPadding="false"
+        android:text="￥"
+        android:textColor="#fb5318"
+        android:textSize="@dimen/sp_30" />
+
+    <TextView
+        android:id="@+id/rv_coupon_wallet_money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/rv_coupon_wallet_temp1"
+        android:layout_toRightOf="@id/rv_coupon_wallet_temp1"
+        android:includeFontPadding="false"
+        android:text="5"
+        android:textColor="#fb5318"
+        android:textSize="@dimen/sp_45" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/rv_coupon_wallet_money"
+        android:layout_marginLeft="@dimen/dp_5"
+        android:layout_toRightOf="@id/rv_coupon_wallet_money"
+        android:text="优惠红包"
+        android:textColor="#2c2b29"
+        android:textSize="@dimen/sp_15" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/rv_coupon_wallet_money"
+        android:layout_marginLeft="@dimen/dp_5"
+        android:layout_toRightOf="@id/rv_coupon_wallet_money"
+        android:text="全 场 可 用"
+        android:textColor="#a09e9f"
+        android:textSize="@dimen/sp_12" />
+
+    <TextView
+        android:id="@+id/rv_coupon_wallet_temp2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/dp_21"
+        android:text="张"
+        android:textColor="#533e30"
+        android:textSize="@dimen/sp_12" />
+
+    <TextView
+        android:id="@+id/rv_coupon_wallet_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/dp_5"
+        android:layout_toLeftOf="@id/rv_coupon_wallet_temp2"
+        android:includeFontPadding="false"
+        android:text="2"
+        android:textColor="#533e30"
+        android:textSize="@dimen/sp_42" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/dp_5"
+        android:layout_toLeftOf="@id/rv_coupon_wallet_count"
+        android:text="X"
+        android:textColor="#533e30"
+        android:textSize="@dimen/sp_12" />
+</RelativeLayout>

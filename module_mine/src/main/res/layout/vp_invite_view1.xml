@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/dp_270"
+    android:layout_height="@dimen/dp_479"
+    android:background="@drawable/zise_beijing">
+
+    <RelativeLayout
+        android:layout_width="@dimen/dp_231"
+        android:layout_height="@dimen/dp_217"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/dp_70"
+        android:background="@drawable/zise_kuang">
+
+        <ImageView
+            android:id="@+id/invite_friends_erweima1"
+            android:layout_width="@dimen/dp_139"
+            android:layout_height="@dimen/dp_139"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dp_49"
+            android:scaleType="fitXY" />
+    </RelativeLayout>
+</RelativeLayout>

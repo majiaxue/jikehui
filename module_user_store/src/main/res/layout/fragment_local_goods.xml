@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/local_detail_goods_rv"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_0"
+        android:layout_weight="1" />
+
+    <TextView
+        android:id="@+id/local_detail_goods_btn"
+        android:layout_width="@dimen/dp_347"
+        android:layout_height="@dimen/dp_45"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dp_20"
+        android:layout_marginBottom="@dimen/dp_21"
+        android:background="@drawable/bg_22_feb_fb4"
+        android:gravity="center"
+        android:text="立 即 支 付"
+        android:textColor="#f5f5f5"
+        android:textSize="@dimen/sp_20" />
+</LinearLayout>

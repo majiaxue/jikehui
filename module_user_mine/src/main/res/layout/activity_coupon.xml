@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.coupon.CouponActivity">
+
+    <include layout="@layout/page_top" />
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/coupon_tab"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_44"
+        android:background="#FFFFFF"
+        app:tabIndicatorColor="#fd3c15"
+        app:tabIndicatorFullWidth="false"
+        app:tabIndicatorGravity="bottom"
+        app:tabMode="fixed"
+        app:tabRippleColor="@android:color/transparent"
+        app:tabSelectedTextColor="#fd3c15"
+        app:tabTextColor="#666666" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/coupon_vp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></android.support.v4.view.ViewPager>
+
+</LinearLayout>

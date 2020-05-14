@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/page_top" />
+
+    <ImageView
+        android:layout_width="@dimen/dp_64"
+        android:layout_height="@dimen/dp_64"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dp_49"
+        android:src="@drawable/icon_weixin1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dp_20"
+        android:includeFontPadding="false"
+        android:text="@string/bind_wechat"
+        android:textColor="#222222"
+        android:textSize="@dimen/sp_16" />
+
+    <View
+        android:layout_width="@dimen/dp_0"
+        android:layout_height="@dimen/dp_0"
+        android:layout_weight="1" />
+
+    <TextView
+        android:id="@+id/bind_wechat_btn"
+        android:layout_width="@dimen/dp_347"
+        android:layout_height="@dimen/dp_45"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/dp_29"
+        android:background="@drawable/bg_btn_login"
+        android:gravity="center"
+        android:text="@string/bind_just"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/sp_18" />
+</LinearLayout>

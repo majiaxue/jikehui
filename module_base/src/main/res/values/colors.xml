@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="codeText">#fd3c15</color>
+    <color name="color333">#333333</color>
+    <color name="color999">#999999</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+
+    <color name="colorProgress">#fbeadb</color>
+    <color name="colorIndicatorColor">#fc6615</color>
+
+    <color name="colorTransparency">#00FFFFFF</color>
+    <color name="statusBg">#99999999</color>
+</resources>

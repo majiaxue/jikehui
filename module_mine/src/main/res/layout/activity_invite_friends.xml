@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+<!--    <RelativeLayout-->
+<!--        android:id="@+id/invite_friends_rela1"-->
+<!--        android:layout_width="@dimen/dp_375"-->
+<!--        android:layout_height="@dimen/dp_667"-->
+<!--        android:background="@drawable/zise_beijing">-->
+
+<!--        <RelativeLayout-->
+<!--            android:layout_width="@dimen/dp_321"-->
+<!--            android:layout_height="@dimen/dp_301"-->
+<!--            android:layout_centerHorizontal="true"-->
+<!--            android:layout_marginTop="@dimen/dp_280"-->
+<!--            android:background="@drawable/zise_kuang">-->
+
+<!--            <ImageView-->
+<!--                android:id="@+id/invite_friends_erweima1"-->
+<!--                android:layout_width="@dimen/dp_193"-->
+<!--                android:layout_height="@dimen/dp_193"-->
+<!--                android:layout_centerHorizontal="true"-->
+<!--                android:layout_marginTop="@dimen/dp_68"-->
+<!--                android:scaleType="fitXY" />-->
+<!--        </RelativeLayout>-->
+
+<!--    </RelativeLayout>-->
+
+<!--    <RelativeLayout-->
+<!--        android:id="@+id/invite_friends_rela2"-->
+<!--        android:layout_width="@dimen/dp_375"-->
+<!--        android:layout_height="@dimen/dp_667"-->
+<!--        android:background="@drawable/bg_yaoqinghaoyou2">-->
+
+<!--        <RelativeLayout-->
+<!--            android:layout_width="@dimen/dp_206"-->
+<!--            android:layout_height="@dimen/dp_206"-->
+<!--            android:layout_alignParentBottom="true"-->
+<!--            android:layout_centerHorizontal="true"-->
+<!--            android:layout_marginBottom="@dimen/dp_65"-->
+<!--            android:background="#ffffff">-->
+
+<!--            <ImageView-->
+<!--                android:id="@+id/invite_friends_erweima2"-->
+<!--                android:layout_width="@dimen/dp_185"-->
+<!--                android:layout_height="@dimen/dp_185"-->
+<!--                android:layout_centerInParent="true"-->
+<!--                android:scaleType="fitXY" />-->
+<!--        </RelativeLayout>-->
+<!--    </RelativeLayout>-->
+
+<!--    <RelativeLayout-->
+<!--        android:id="@+id/invite_friends_rela3"-->
+<!--        android:layout_width="@dimen/dp_375"-->
+<!--        android:layout_height="@dimen/dp_667"-->
+<!--        android:background="@drawable/hongse_beijing">-->
+
+<!--        <RelativeLayout-->
+<!--            android:layout_width="@dimen/dp_321"-->
+<!--            android:layout_height="@dimen/dp_301"-->
+<!--            android:layout_centerHorizontal="true"-->
+<!--            android:layout_marginTop="@dimen/dp_280"-->
+<!--            android:background="@drawable/hongse_dikuang">-->
+
+<!--            <ImageView-->
+<!--                android:id="@+id/invite_friends_erweima3"-->
+<!--                android:layout_width="@dimen/dp_190"-->
+<!--                android:layout_height="@dimen/dp_190"-->
+<!--                android:layout_centerHorizontal="true"-->
+<!--                android:layout_marginTop="@dimen/dp_68"-->
+<!--                android:scaleType="fitXY" />-->
+<!--        </RelativeLayout>-->
+
+<!--    </RelativeLayout>-->
+
+<!--    <RelativeLayout-->
+<!--        android:id="@+id/invite_friends_rela4"-->
+<!--        android:layout_width="@dimen/dp_375"-->
+<!--        android:layout_height="@dimen/dp_667"-->
+<!--        android:background="@drawable/bg_yaoqinghaoyou4">-->
+
+<!--        <RelativeLayout-->
+<!--            android:layout_width="@dimen/dp_347"-->
+<!--            android:layout_height="@dimen/dp_347"-->
+<!--            android:layout_alignParentBottom="true"-->
+<!--            android:layout_centerHorizontal="true"-->
+<!--            android:layout_marginBottom="@dimen/dp_52"-->
+<!--            android:background="@drawable/bg_yaoqinghaoyou4_inside">-->
+
+<!--            <RelativeLayout-->
+<!--                android:layout_width="@dimen/dp_215"-->
+<!--                android:layout_height="@dimen/dp_215"-->
+<!--                android:layout_centerInParent="true"-->
+<!--                android:background="#ffffff">-->
+
+<!--                <ImageView-->
+<!--                    android:id="@+id/invite_friends_erweima4"-->
+<!--                    android:layout_width="@dimen/dp_185"-->
+<!--                    android:layout_height="@dimen/dp_185"-->
+<!--                    android:layout_centerInParent="true"-->
+<!--                    android:scaleType="fitXY" />-->
+<!--            </RelativeLayout>-->
+<!--        </RelativeLayout>-->
+
+
+<!--    </RelativeLayout>-->
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:background="#ffffff"-->
+<!--        android:orientation="vertical">-->
+
+<!--        <include layout="@layout/page_top" />-->
+
+<!--        <com.stx.xhb.xbanner.XBanner-->
+<!--            android:id="@+id/invite_friends_banner"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="@dimen/dp_479"-->
+<!--            android:layout_marginTop="@dimen/dp_38"-->
+<!--            android:overScrollMode="never"-->
+<!--            app:clipChildrenLeftRightMargin="@dimen/dp_65"-->
+<!--            app:clipChildrenTopBottomMargin="@dimen/dp_0"-->
+<!--            app:isAutoPlay="false"-->
+<!--            app:isClipChildrenMode="true"-->
+<!--            app:isClipChildrenModeLessThree="true"-->
+<!--            app:isHandLoop="true"-->
+<!--            app:pointsVisibility="false"-->
+<!--            app:viewPagerClipChildren="true"-->
+<!--            app:viewpagerMargin="@dimen/dp_20" />-->
+
+<!--        <View-->
+<!--            android:layout_width="@dimen/dp_0"-->
+<!--            android:layout_height="@dimen/dp_0"-->
+<!--            android:layout_weight="1" />-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginLeft="@dimen/dp_25"-->
+<!--            android:layout_marginRight="@dimen/dp_25"-->
+<!--            android:layout_marginBottom="@dimen/dp_20"-->
+<!--            android:orientation="horizontal">-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/invite_friends_link"-->
+<!--                android:layout_width="@dimen/dp_141"-->
+<!--                android:layout_height="@dimen/dp_45"-->
+<!--                android:background="@drawable/bg_22_feb_fb4"-->
+<!--                android:gravity="center"-->
+<!--                android:text="分享邀请链接"-->
+<!--                android:textColor="#ffffff"-->
+<!--                android:textSize="@dimen/sp_16" />-->
+
+<!--            <View-->
+<!--                android:layout_width="@dimen/dp_0"-->
+<!--                android:layout_height="@dimen/dp_0"-->
+<!--                android:layout_weight="1" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/invite_friends_bill"-->
+<!--                android:layout_width="@dimen/dp_141"-->
+<!--                android:layout_height="@dimen/dp_45"-->
+<!--                android:background="@drawable/bg_22_feb_fb4"-->
+<!--                android:gravity="center"-->
+<!--                android:text="分享邀请海报"-->
+<!--                android:textColor="#ffffff"-->
+<!--                android:textSize="@dimen/sp_16" />-->
+<!--        </LinearLayout>-->
+
+<!--    </LinearLayout>-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:clipChildren="false"
+        android:orientation="vertical">
+
+        <include layout="@layout/page_top" />
+
+        <com.stx.xhb.xbanner.XBanner
+            android:id="@+id/invite_friends_banner"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_479"
+            android:layout_marginTop="@dimen/dp_38"
+            android:overScrollMode="never"
+            android:visibility="gone"
+            app:clipChildrenLeftRightMargin="@dimen/dp_65"
+            app:clipChildrenTopBottomMargin="@dimen/dp_0"
+            app:isAutoPlay="false"
+            app:isClipChildrenMode="true"
+            app:isClipChildrenModeLessThree="true"
+            app:isHandLoop="true"
+            app:pointsVisibility="false"
+            app:viewPagerClipChildren="true"
+            app:viewpagerMargin="@dimen/dp_20" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/invite_friends_vp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_479"
+            android:layout_marginLeft="@dimen/dp_65"
+            android:layout_marginTop="@dimen/dp_38"
+            android:layout_marginRight="@dimen/dp_65"
+            android:overScrollMode="never"
+            android:clipChildren="false" />
+
+        <View
+            android:layout_width="@dimen/dp_0"
+            android:layout_height="@dimen/dp_0"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_25"
+            android:layout_marginRight="@dimen/dp_25"
+            android:layout_marginBottom="@dimen/dp_20"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/invite_friends_link"
+                android:layout_width="@dimen/dp_141"
+                android:layout_height="@dimen/dp_45"
+                android:background="@drawable/bg_22_feb_fb4"
+                android:gravity="center"
+                android:text="分享邀请链接"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/sp_16" />
+
+            <View
+                android:layout_width="@dimen/dp_0"
+                android:layout_height="@dimen/dp_0"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/invite_friends_bill"
+                android:layout_width="@dimen/dp_141"
+                android:layout_height="@dimen/dp_45"
+                android:background="@drawable/bg_22_feb_fb4"
+                android:gravity="center"
+                android:text="分享邀请海报"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/sp_16" />
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

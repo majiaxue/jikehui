@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/rv_vp_operator_gain_img"
+        android:layout_width="@dimen/dp_37"
+        android:layout_height="@dimen/dp_37"
+        android:layout_marginTop="@dimen/dp_13"
+        android:src="@drawable/icon_jinpaihuiyuan" />
+
+    <TextView
+        android:id="@+id/rv_vp_operator_gain_txt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_5"
+        android:includeFontPadding="false"
+        android:text="金牌会员"
+        android:textColor="#222222"
+        android:textSize="@dimen/sp_11" />
+
+    <TextView
+        android:id="@+id/rv_vp_operator_gain_txt2"
+        android:layout_width="@dimen/dp_74"
+        android:layout_height="@dimen/dp_17"
+        android:layout_marginTop="@dimen/dp_2"
+        android:background="#ffeaea"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:text="所有权益"
+        android:textColor="#f33f3f"
+        android:textSize="@dimen/sp_10" />
+</LinearLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/dp_270"
+    android:layout_height="@dimen/dp_479"
+    android:background="@drawable/bg_yaoqinghaoyou4">
+
+    <RelativeLayout
+        android:layout_width="@dimen/dp_238"
+        android:layout_height="@dimen/dp_238"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/dp_37"
+        android:background="@drawable/bg_yaoqinghaoyou4_inside">
+
+        <RelativeLayout
+            android:layout_width="@dimen/dp_150"
+            android:layout_height="@dimen/dp_150"
+            android:layout_centerInParent="true"
+            android:background="#ffffff">
+
+            <ImageView
+                android:id="@+id/invite_friends_erweima4"
+                android:layout_width="@dimen/dp_133"
+                android:layout_height="@dimen/dp_133"
+                android:layout_centerInParent="true"
+                android:scaleType="fitXY" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/img_xiao"
+        android:layout_width="@dimen/dp_35"
+        android:layout_height="@dimen/dp_35"
+        android:layout_marginLeft="@dimen/dp_15"
+        android:layout_marginTop="@dimen/dp_27"
+        android:src="@drawable/chong" />
+
+    <TextView
+        android:id="@+id/item_gou_xiao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_23"
+        android:layout_toRightOf="@id/img_xiao"
+        android:text="购物消费"
+        android:textSize="@dimen/sp_14" />
+
+    <TextView
+        android:id="@+id/item_gou_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/item_gou_xiao"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_7"
+        android:layout_toRightOf="@id/img_xiao"
+        android:text="2019-10-12"
+        android:textSize="@dimen/sp_11" />
+
+    <TextView
+        android:id="@+id/item_gou_ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_23"
+        android:layout_marginRight="@dimen/dp_15"
+        android:text="消费成功"
+        android:textSize="@dimen/sp_11" />
+
+    <TextView
+        android:id="@+id/item_gou_kouqian"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/item_gou_ok"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/dp_7"
+        android:layout_marginRight="@dimen/dp_15"
+        android:text="-160.00"
+        android:textSize="@dimen/sp_16" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:layout_below="@id/item_gou_kouqian"
+        android:layout_marginTop="@dimen/dp_15"
+        android:background="#eeeeee" />
+</RelativeLayout>

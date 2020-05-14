@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.example.view.WindowInsetsFrameLayout
+        android:id="@+id/main_frame"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <RadioGroup
+        android:id="@+id/main_group"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_45"
+        android:background="#FFFFFF"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/main_home"
+            style="@style/main_bottom_back"
+            android:checked="true"
+            android:drawableTop="@drawable/bg_home"
+            android:paddingTop="@dimen/dp_7"
+            android:text="首页"
+            android:textColor="@color/color_f23_010" />
+
+        <!--<RadioButton-->
+        <!--android:id="@+id/main_classify"-->
+        <!--style="@style/main_bottom_back"-->
+        <!--android:drawableTop="@drawable/bg_super_brand"-->
+        <!--android:paddingTop="@dimen/dp_7"-->
+        <!--android:text="品牌"-->
+        <!--android:textColor="@color/color_f23_010" />-->
+
+        <Button
+            android:id="@+id/main_shangcheng"
+            style="@style/main_bottom_back"
+            android:background="@null"
+            android:drawableTop="@drawable/shangcheng0"
+            android:gravity="center"
+            android:paddingTop="@dimen/dp_7"
+            android:text="商城"
+            android:textColor="#010101" />
+
+        <RadioButton
+            android:id="@+id/main_operator"
+            style="@style/main_bottom_back"
+            android:drawableTop="@drawable/huiyuan"
+            android:gravity="center"
+            android:orientation="vertical" />
+
+        <RadioButton
+            android:id="@+id/main_community"
+            style="@style/main_bottom_back"
+            android:drawableTop="@drawable/bg_hairring"
+            android:paddingTop="@dimen/dp_7"
+            android:text="社区"
+            android:textColor="@color/color_f23_010" />
+
+        <RadioButton
+            android:id="@+id/main_mine"
+            style="@style/main_bottom_back"
+            android:drawableTop="@drawable/bg_mine"
+            android:paddingTop="@dimen/dp_7"
+            android:text="我的"
+            android:textColor="@color/color_f23_010" />
+    </RadioGroup>
+
+</LinearLayout>

@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5f5f5"
+    android:orientation="vertical">
+
+    <include layout="@layout/page_top" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_0"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/confirm_order_rela"
+                android:layout_width="@dimen/dp_362"
+                android:layout_height="@dimen/dp_104"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/background_dizhi">
+
+                <TextView
+                    android:id="@+id/confirm_order_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_20"
+                    android:layout_marginTop="@dimen/dp_22"
+                    android:includeFontPadding="false"
+                    android:textColor="#333333"
+                    android:textSize="@dimen/sp_15" />
+
+                <TextView
+                    android:id="@+id/confirm_order_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/confirm_order_name"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_toRightOf="@id/confirm_order_name"
+                    android:includeFontPadding="false"
+                    android:textColor="#333333"
+                    android:textSize="@dimen/sp_15" />
+
+                <TextView
+                    android:id="@+id/confirm_order_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/confirm_order_name"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="@dimen/dp_29"
+                    android:includeFontPadding="false"
+                    android:textColor="#333333"
+                    android:textSize="@dimen/sp_14" />
+
+                <ImageView
+                    android:layout_width="@dimen/dp_8"
+                    android:layout_height="@dimen/dp_16"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/dp_18"
+                    android:src="@drawable/icon_gengduo2" />
+
+                <TextView
+                    android:id="@+id/confirm_order_choose_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dp_20"
+                    android:includeFontPadding="false"
+                    android:text="请选择收获地址"
+                    android:textColor="#333333"
+                    android:textSize="@dimen/sp_15"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/confirm_order_rv"
+                android:layout_width="@dimen/dp_351"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dp_9"></android.support.v7.widget.RecyclerView>
+
+            <LinearLayout
+                android:layout_width="@dimen/dp_351"
+                android:layout_height="@dimen/dp_105"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dp_15"
+                android:background="@drawable/bg_10_fff"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_0"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/dp_9"
+                    android:paddingRight="@dimen/dp_8">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:includeFontPadding="false"
+                        android:text="共计金额"
+                        android:textColor="#333333"
+                        android:textSize="@dimen/sp_12" />
+
+                    <View
+                        android:layout_width="@dimen/dp_0"
+                        android:layout_height="@dimen/dp_0"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:id="@+id/confirm_order_total_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:includeFontPadding="false"
+                        android:text="￥59.00"
+                        android:textColor="#fd3c15"
+                        android:textSize="@dimen/sp_12" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_0"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/dp_9"
+                    android:paddingRight="@dimen/dp_8">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:includeFontPadding="false"
+                        android:text="共计运费"
+                        android:textColor="#333333"
+                        android:textSize="@dimen/sp_12" />
+
+                    <View
+                        android:layout_width="@dimen/dp_0"
+                        android:layout_height="@dimen/dp_0"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:id="@+id/confirm_order_total_yunfei"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:includeFontPadding="false"
+                        android:text="+￥0.00"
+                        android:textColor="#fd3c15"
+                        android:textSize="@dimen/sp_12" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_0"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/dp_9"
+                    android:paddingRight="@dimen/dp_8">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:includeFontPadding="false"
+                        android:text="优惠金额"
+                        android:textColor="#333333"
+                        android:textSize="@dimen/sp_12" />
+
+                    <View
+                        android:layout_width="@dimen/dp_0"
+                        android:layout_height="@dimen/dp_0"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:id="@+id/confirm_order_total_coupon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:includeFontPadding="false"
+                        android:text="-￥0.00"
+                        android:textColor="#fd3c15"
+                        android:textSize="@dimen/sp_12" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="@dimen/dp_0"
+                android:layout_height="@dimen/dp_20" />
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_47"
+        android:background="#ffffff">
+
+        <TextView
+            android:id="@+id/confirm_order_temp1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_15"
+            android:text="合计："
+            android:textColor="#666666"
+            android:textSize="@dimen/sp_12" />
+
+        <TextView
+            android:id="@+id/confirm_order_temp2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/confirm_order_temp1"
+            android:layout_toRightOf="@id/confirm_order_temp1"
+            android:text="¥"
+            android:textColor="@color/codeText"
+            android:textSize="@dimen/sp_11" />
+
+        <TextView
+            android:id="@+id/confirm_order_final_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_3"
+            android:layout_toRightOf="@id/confirm_order_temp2"
+            android:text="..."
+            android:textColor="@color/codeText"
+            android:textSize="@dimen/sp_16" />
+
+        <TextView
+            android:id="@+id/confirm_order_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/confirm_order_temp1"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_toRightOf="@id/confirm_order_final_price"
+            android:includeFontPadding="false"
+            android:textColor="#666666"
+            android:textSize="@dimen/sp_11" />
+
+        <TextView
+            android:id="@+id/confirm_order_submit"
+            android:layout_width="@dimen/dp_68"
+            android:layout_height="@dimen/dp_25"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dp_16"
+            android:background="@drawable/bg_5_fb4_feb"
+            android:gravity="center"
+            android:text="提交订单"
+            android:textColor="#fefefe"
+            android:textSize="@dimen/sp_14" />
+    </RelativeLayout>
+</LinearLayout>

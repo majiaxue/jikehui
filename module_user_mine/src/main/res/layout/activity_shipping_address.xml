@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context="com.example.shippingaddress.ShippingAddressActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_90"
+        android:background="@drawable/bg_jianbian_hong"
+        android:orientation="vertical">
+
+        <include layout="@layout/include_status" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_45">
+
+            <ImageView
+                android:id="@+id/shipping_address_back"
+                android:layout_width="@dimen/dp_24"
+                android:layout_height="@dimen/dp_32"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dp_4"
+                android:padding="@dimen/dp_8"
+                android:src="@drawable/icon_fanhui_bai" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:includeFontPadding="false"
+                android:text="收货地址"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/sp_18" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_0"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/wu_di_zhi_icon"
+                android:layout_width="@dimen/dp_223"
+                android:layout_height="@dimen/dp_218"
+                android:layout_marginTop="@dimen/dp_42"
+                android:src="@drawable/icon_wudizhi"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/wu_di_zhi_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_13"
+                android:text="您还没有收货地址哦~"
+                android:textColor="#999999"
+                android:textSize="@dimen/sp_15"
+                android:visibility="gone" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/shipping_address_rec"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/dp_5" />
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+    <TextView
+        android:id="@+id/shipping_address_button"
+        android:layout_width="@dimen/dp_351"
+        android:layout_height="@dimen/dp_45"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:background="@drawable/bg_22_jianbian"
+        android:gravity="center"
+        android:text="添加新地址"
+        android:textColor="#ececec"
+        android:textSize="@dimen/sp_17" />
+
+</LinearLayout>

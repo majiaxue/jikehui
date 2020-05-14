@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rv_commend_parent"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="@dimen/dp_169"
+        android:layout_height="wrap_content"
+        android:background="@drawable/pop_clear_cache"
+        android:orientation="vertical">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/rv_commend_img"
+            android:layout_width="@dimen/dp_162"
+            android:layout_height="@dimen/dp_162"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dp_3"
+            app:roundBottomLeft="false"
+            app:roundBottomRight="false"
+            app:roundedCornerRadius="@dimen/dp_5" />
+
+        <TextView
+            android:id="@+id/rv_commend_name"
+            android:layout_width="@dimen/dp_150"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dp_10"
+            android:ellipsize="end"
+            android:includeFontPadding="false"
+            android:maxLines="1" />
+
+
+        <TextView
+            android:id="@+id/rv_commend_price"
+            android:layout_width="@dimen/dp_150"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dp_10"
+            android:includeFontPadding="false"
+            android:text="￥30.00"
+            android:textColor="#fb4119"
+            android:textSize="@dimen/sp_15" />
+
+
+        <LinearLayout
+            android:layout_width="@dimen/dp_150"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dp_8"
+            android:layout_marginBottom="@dimen/dp_10"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/rv_commend_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:includeFontPadding="false"
+                android:text="12人付款"
+                android:textColor="#999999"
+                android:textSize="@dimen/sp_11" />
+
+            <View
+                android:layout_width="@dimen/dp_0"
+                android:layout_height="@dimen/dp_0"
+                android:layout_weight="1" />
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/rv_commend_predict"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dp_18"
+                android:background="@drawable/bg_9_fb4119"
+                android:gravity="center"
+                android:paddingLeft="@dimen/dp_7"
+                android:paddingRight="@dimen/dp_7"
+                android:text="预估赚￥0.00"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/sp_10" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_13"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_marginRight="@dimen/dp_19"
+            android:layout_marginBottom="@dimen/dp_10"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/rv_commend_shop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:includeFontPadding="false"
+                android:text="古田兔旗舰店"
+                android:textColor="#fd3c15"
+                android:textSize="@dimen/sp_12"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="@dimen/dp_0"
+                android:layout_height="@dimen/dp_0"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/rv_commend_btn"
+                android:layout_width="@dimen/dp_32"
+                android:layout_height="@dimen/dp_15"
+                android:background="@drawable/bg_5_fb4_feb"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:text="进店"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/sp_12"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

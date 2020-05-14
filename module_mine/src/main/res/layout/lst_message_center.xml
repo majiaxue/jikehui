@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/dp_10">
+
+    <RelativeLayout
+        android:layout_width="@dimen/dp_351"
+        android:layout_height="@dimen/dp_189"
+        android:background="@drawable/bg_10_fff">
+
+        <TextView
+            android:id="@+id/lst_message_center_title"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_39"
+            android:layout_marginLeft="@dimen/dp_18"
+            android:gravity="center"
+            android:textColor="#333333"
+            android:textSize="@dimen/sp_14" />
+
+        <TextView
+            android:id="@+id/lst_message_center_type"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_39"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dp_23"
+            android:gravity="center"
+            android:textColor="#999999"
+            android:textSize="@dimen/sp_14" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_1"
+            android:layout_below="@id/lst_message_center_title"
+            android:background="#eeeeee" />
+
+        <TextView
+            android:id="@+id/lst_message_center_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_19"
+            android:layout_marginTop="@dimen/dp_53"
+            android:textColor="#333333"
+            android:textSize="@dimen/sp_16" />
+
+        <TextView
+            android:id="@+id/lst_message_center_content"
+            android:layout_width="@dimen/dp_192"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lst_message_center_status"
+            android:layout_marginLeft="@dimen/dp_19"
+            android:layout_marginTop="@dimen/dp_14"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:textColor="#999999"
+            android:textSize="@dimen/sp_13" />
+
+        <TextView
+            android:id="@+id/lst_message_center_express"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lst_message_center_content"
+            android:layout_marginLeft="@dimen/dp_19"
+            android:layout_marginTop="@dimen/dp_5"
+            android:textColor="#999999"
+            android:textSize="@dimen/sp_13" />
+
+        <ImageView
+            android:id="@+id/lst_message_center_img"
+            android:layout_width="@dimen/dp_57"
+            android:layout_height="@dimen/dp_57"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/dp_54"
+            android:layout_marginRight="@dimen/dp_23"
+            android:scaleType="fitXY" />
+
+        <LinearLayout
+            android:id="@+id/lst_message_center_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_38"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/dp_20"
+                android:text="查看详情"
+                android:textColor="#fc5917"
+                android:textSize="@dimen/sp_12" />
+
+            <View
+                android:layout_width="@dimen/dp_0"
+                android:layout_height="@dimen/dp_0"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:layout_width="@dimen/dp_6"
+                android:layout_height="@dimen/dp_12"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="@dimen/dp_24"
+                android:src="@drawable/icon_fanhui_bai" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_1"
+            android:layout_above="@id/lst_message_center_bottom"
+            android:background="#eeeeee" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.module_classify">
+
+    <application
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        tools:replace="android:allowBackup">
+        <activity
+            android:name="com.example.commoditydetails.jd.JDCommodityDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.commoditydetails.webview.WebViewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.intoshop.IntoShopActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.classificationdetails.ClassificationDetailsActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.commoditydetails.pdd.CommodityDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.commoditydetails.taobao.TBCommodityDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.shop_home.TShopHomeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.shou_quan.ShouQuanActivity"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>

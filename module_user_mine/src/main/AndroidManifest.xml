@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.module_user_mine">
+
+    <application
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        tools:replace="android:allowBackup">
+        <activity
+            android:name="com.example.mineorder.staydeliverygoods.orderdetails.OrderDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.logisticsinformation.LogisticsInformationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.obligation.ObligationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.refundparticulars.RefundParticularsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.refund.RefundSucceedActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.refund.RefundActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.browsinghistory.BrowsingHistoryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.alteration.AlterationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.mineorder.MineOrderActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.shopcollect.ShopCollectActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.shippingaddress.amendaddress.AmendAddressActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.coupon.CouponActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.businessapplication.BusinessApplicationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.shippingaddress.address.AddressActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.shippingaddress.ShippingAddressActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.goodscollection.GoodsCollectionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.order_assess.OrderAssessActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"/>
+    </application>
+
+</manifest>

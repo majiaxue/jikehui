@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/page_top" />
+
+    <EditText
+        android:id="@+id/wechat_phone"
+        android:layout_width="@dimen/dp_295"
+        android:layout_height="@dimen/dp_40"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dp_62"
+        android:background="@null"
+        android:drawableLeft="@drawable/icon_shoujihao"
+        android:drawablePadding="@dimen/dp_10"
+        android:hint="@string/input_phone"
+        android:inputType="number"
+        android:textColor="#333333"
+        android:textColorHint="#999999"
+        android:textCursorDrawable="@drawable/edit_cursor"
+        android:textSize="@dimen/sp_17" />
+
+    <View
+        android:layout_width="@dimen/dp_295"
+        android:layout_height="@dimen/dp_1"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dp_5"
+        android:background="#eeeeee" />
+
+    <LinearLayout
+        android:layout_width="@dimen/dp_295"
+        android:layout_height="@dimen/dp_55"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/wechat_code"
+            android:layout_width="@dimen/dp_0"
+            android:layout_height="@dimen/dp_40"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="@null"
+            android:drawableLeft="@drawable/icon_yanzhengma"
+            android:drawablePadding="@dimen/dp_11"
+            android:hint="@string/input_code"
+            android:inputType="number"
+            android:textColor="#333333"
+            android:textColorHint="#999999"
+            android:textCursorDrawable="@drawable/edit_cursor"
+            android:textSize="@dimen/sp_15" />
+
+
+        <TextView
+            android:id="@+id/wechat_get_code"
+            android:layout_width="@dimen/dp_70"
+            android:layout_height="@dimen/dp_27"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/bg_get_code"
+            android:gravity="center"
+            android:text="@string/get_code"
+            android:textColor="#fb4119"
+            android:textSize="@dimen/sp_11" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="@dimen/dp_295"
+        android:layout_height="@dimen/dp_1"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dp_5"
+        android:background="#eeeeee" />
+
+    <EditText
+        android:id="@+id/wechat_invite_code"
+        android:layout_width="@dimen/dp_295"
+        android:layout_height="@dimen/dp_40"
+        android:layout_gravity="center_horizontal"
+        android:background="@null"
+        android:drawableLeft="@drawable/icon_yaoqing"
+        android:drawablePadding="@dimen/dp_8"
+        android:hint="@string/invite_code"
+        android:textColor="#333333"
+        android:textColorHint="#999999"
+        android:textCursorDrawable="@drawable/edit_cursor"
+        android:textSize="@dimen/sp_17" />
+
+    <View
+        android:layout_width="@dimen/dp_295"
+        android:layout_height="@dimen/dp_1"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dp_5"
+        android:background="#eeeeee" />
+
+    <TextView
+        android:id="@+id/wechat_btn"
+        android:layout_width="@dimen/dp_295"
+        android:layout_height="@dimen/dp_45"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dp_138"
+        android:background="@drawable/bg_btn_login"
+        android:gravity="center"
+        android:text="@string/login_title"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/sp_18" />
+
+    <LinearLayout
+        android:layout_width="@dimen/dp_295"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dp_10"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/wechat_check"
+            android:layout_width="@dimen/dp_23"
+            android:layout_height="@dimen/dp_23"
+            android:padding="@dimen/dp_5"
+            android:src="@drawable/icon_yiyuedu" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_8"
+            android:includeFontPadding="false"
+            android:text="@string/read_and_accept"
+            android:textColor="#666666"
+            android:textSize="@dimen/sp_14" />
+
+        <TextView
+            android:id="@+id/wechat_user_agreement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:includeFontPadding="false"
+            android:text="@string/user_agreement"
+            android:textColor="#fb4119"
+            android:textSize="@dimen/sp_14" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="@dimen/dp_0"
+        android:layout_height="@dimen/dp_0"
+        android:layout_weight="1" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_146"
+        android:src="@drawable/background_wangji" />
+</LinearLayout>

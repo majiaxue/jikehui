@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!--<VideoView-->
+        <!--android:id="@+id/shake_stock_rec_video"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_centerInParent="true"/>-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true">
+        <cn.jzvd.JzvdStd
+            android:id="@+id/shake_stock_rec_video"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/dp_15"
+        android:layout_marginRight="@dimen/dp_20"
+        android:layout_marginBottom="@dimen/dp_21"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/shake_stock_rec_nick"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:includeFontPadding="false"
+                android:text=" @alicafe菲特力旗舰店"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/sp_17" />
+
+            <TextView
+                android:id="@+id/shake_stock_rec_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_8"
+                android:includeFontPadding="false"
+                android:text="23人已购"
+                android:textColor="#fbab12"
+                android:textSize="@dimen/sp_12" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/shake_stock_rec_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_16"
+            android:ellipsize="end"
+            android:includeFontPadding="false"
+            android:lines="1"
+            android:text="马来西亚原装进口菲特力法式碳烤咖啡3合1速溶咖啡8条装"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/sp_12" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_12"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/shake_stock_rec_juan_hou"
+                android:layout_width="@dimen/dp_78"
+                android:layout_height="@dimen/dp_26"
+                android:background="@drawable/img_quanhou"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:text="券后￥19.90"
+                android:textColor="#fff"
+                android:textSize="@dimen/sp_11" />
+
+            <TextView
+                android:id="@+id/shake_stock_rec_ling_juan"
+                android:layout_width="@dimen/dp_78"
+                android:layout_height="@dimen/dp_26"
+                android:layout_marginLeft="@dimen/dp_5"
+                android:background="@drawable/img_lingquan"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:text="20元券"
+                android:textColor="#fff"
+                android:textSize="@dimen/sp_11" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/shake_stock_rec_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_10"
+            android:ellipsize="end"
+            android:lines="2"
+            android:text="精选咖啡生豆新鲜烘培，可现磨成咖啡粉，回味无穷，入口丝滑般顺滑，酸苦甘甜搭配均衡，咖啡豆香气浓郁，油脂丰富..."
+            android:textColor="#ffffff"
+            android:textSize="@dimen/sp_12" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="@dimen/dp_15"
+        android:layout_marginBottom="@dimen/dp_192"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/shake_stock_rec_go_to_buy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/shake_stock_rec_goods_image"
+                app:roundAsCircle="true"
+                android:layout_width="@dimen/dp_39"
+                android:layout_height="@dimen/dp_39" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:includeFontPadding="false"
+                android:text="去购买"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/sp_14" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/shake_stock_rec_collect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_25"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/shake_stock_rec_collect_image"
+                android:layout_width="@dimen/dp_27"
+                android:layout_height="@dimen/dp_23"
+                android:src="@drawable/icon_shoucang" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_8"
+                android:includeFontPadding="false"
+                android:text="收藏"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/sp_14" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/shake_stock_rec_share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_20"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/dp_25"
+                android:layout_height="@dimen/dp_23"
+                android:src="@drawable/icon_fenxiang2" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_8"
+                android:includeFontPadding="false"
+                android:text="分享"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/sp_14" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/dp_120"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/sp_30"
+            android:background="@drawable/bg_15_gray_left_top_bottom"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="@dimen/dp_30"
+                android:layout_height="@dimen/dp_30"
+                android:background="@drawable/bg_red_15_fb3912"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:text="赚"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/sp_15" />
+
+            <TextView
+                android:id="@+id/shake_stock_rec_gain_money"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:paddingLeft="@dimen/dp_5"
+                android:paddingRight="@dimen/dp_10"
+                android:text="￥1.80"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/sp_15" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_30"
+            android:layout_marginTop="@dimen/dp_8"
+            android:background="@drawable/bg_15_gray_left_top_bottom"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="@dimen/dp_30"
+                android:layout_height="@dimen/dp_30"
+                android:background="@drawable/bg_yellow_15_febc0d"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:text="省"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/sp_15" />
+
+            <TextView
+                android:id="@+id/shake_stock_rec_province_money"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:paddingLeft="@dimen/dp_5"
+                android:paddingRight="@dimen/dp_10"
+                android:text="￥1.80"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/sp_15" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@drawable/icon_bofanganniu"
+        android:visibility="gone" />
+</RelativeLayout>

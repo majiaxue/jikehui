@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5f5f5"
+    android:orientation="vertical">
+
+    <include layout="@layout/page_top" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_200"
+                android:scaleType="fitXY"
+                android:src="@drawable/icon_jifenduihuan" />
+
+            <LinearLayout
+                android:layout_width="@dimen/dp_351"
+                android:layout_height="@dimen/dp_97"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/bg_4_fff"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="@dimen/dp_0"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/points_total_points"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:includeFontPadding="false"
+                        android:text="0"
+                        android:textColor="#fb3912"
+                        android:textSize="@dimen/sp_30" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_7"
+                        android:text="可提现积分"
+                        android:textColor="#666666"
+                        android:textSize="@dimen/sp_14" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="@dimen/dp_0"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/points_cashing_points"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:includeFontPadding="false"
+                        android:text="0"
+                        android:textColor="#fb3912"
+                        android:textSize="@dimen/sp_30" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_7"
+                        android:text="提现中积分"
+                        android:textColor="#666666"
+                        android:textSize="@dimen/sp_14" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="@dimen/dp_351"
+                android:layout_height="@dimen/dp_116"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dp_7"
+                android:background="@drawable/bg_4_fff"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_13"
+                    android:layout_marginTop="@dimen/dp_14"
+                    android:includeFontPadding="false"
+                    android:text="提现到"
+                    android:textColor="#333333"
+                    android:textSize="@dimen/sp_16" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_1"
+                    android:layout_marginLeft="@dimen/dp_13"
+                    android:layout_marginTop="@dimen/dp_9"
+                    android:layout_marginRight="@dimen/dp_13"
+                    android:background="#dedede" />
+
+                <RelativeLayout
+                    android:id="@+id/points_choose_zfb"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/dp_13"
+                    android:layout_marginRight="@dimen/dp_13">
+
+                    <ImageView
+                        android:id="@+id/points_temp1"
+                        android:layout_width="@dimen/dp_38"
+                        android:layout_height="@dimen/dp_38"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/icon_zhifubao" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@id/points_temp1"
+                        android:layout_marginLeft="@dimen/dp_18"
+                        android:layout_toRightOf="@id/points_temp1"
+                        android:includeFontPadding="false"
+                        android:text="支付宝"
+                        android:textColor="#333333"
+                        android:textSize="@dimen/sp_16" />
+
+                    <TextView
+                        android:id="@+id/points_zfb_account"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/points_temp1"
+                        android:layout_marginLeft="@dimen/dp_18"
+                        android:layout_toRightOf="@id/points_temp1"
+                        android:includeFontPadding="false"
+                        android:text="还没有支付宝账号，去添加"
+                        android:textColor="#999999"
+                        android:textSize="@dimen/sp_12" />
+
+                    <ImageView
+                        android:layout_width="@dimen/dp_9"
+                        android:layout_height="@dimen/dp_16"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/icon_youjiantou" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="@dimen/dp_351"
+                android:layout_height="@dimen/dp_250"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dp_7"
+                android:background="@drawable/bg_4_fff"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_13"
+                    android:layout_marginTop="@dimen/dp_27"
+                    android:text="提现积分"
+                    android:textColor="#333333"
+                    android:textSize="@dimen/sp_12" />
+
+                <EditText
+                    android:id="@+id/points_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_13"
+                    android:layout_marginTop="@dimen/dp_18"
+                    android:layout_marginRight="@dimen/dp_13"
+                    android:background="@null"
+                    android:digits="1234567890"
+                    android:drawableLeft="@drawable/icon_jifen"
+                    android:drawablePadding="@dimen/dp_16"
+                    android:hint="请输入提取的积分"
+                    android:inputType="number"
+                    android:paddingTop="@dimen/dp_5"
+                    android:paddingBottom="@dimen/dp_10"
+                    android:textColor="#333333"
+                    android:textColorHint="#b7b7b7"
+                    android:textCursorDrawable="@drawable/edit_cursor"
+                    android:textSize="@dimen/sp_14" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_1"
+                    android:layout_marginLeft="@dimen/dp_13"
+                    android:layout_marginRight="@dimen/dp_13"
+                    android:background="#dedede" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_13"
+                    android:layout_marginTop="@dimen/dp_8"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/points_my_points"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="@dimen/dp_5"
+                        android:text="剩余积分22，"
+                        android:textColor="#333333"
+                        android:textSize="@dimen/sp_10" />
+
+                    <TextView
+                        android:id="@+id/points_toall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="@dimen/dp_5"
+                        android:paddingRight="@dimen/dp_5"
+                        android:paddingBottom="@dimen/dp_5"
+                        android:text="全部提现"
+                        android:textColor="#e36013"
+                        android:textSize="@dimen/sp_10" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/points_rules"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_13"
+                    android:layout_marginRight="@dimen/dp_13"
+                    android:text="100积分=1元，最小提现金额为5个积分，手续费为10%，提现必须是10的倍数"
+                    android:textColor="#333333"
+                    android:textSize="@dimen/sp_10" />
+
+                <TextView
+                    android:id="@+id/points_btn"
+                    android:layout_width="@dimen/dp_326"
+                    android:layout_height="@dimen/dp_45"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/dp_30"
+                    android:background="@drawable/bg_22_feb_fb4"
+                    android:gravity="center"
+                    android:text="提现"
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/sp_16" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_14"
+                android:layout_marginTop="@dimen/dp_21"
+                android:layout_marginRight="@dimen/dp_14"
+                android:paddingBottom="@dimen/dp_27"
+                android:text="1.设置每个月的结算日，例如设置25，就是每个月25号提现上个月已结算佣金
+2.提现手续费，例如用户设置10%，用户提现100，那么扣除用户10元，用户
+   真是到账90元，可以为0，就是不扣钱
+3.最低提现额度，低于这个额度不能提现"
+                android:textColor="#666666"
+                android:textSize="@dimen/sp_10" />
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

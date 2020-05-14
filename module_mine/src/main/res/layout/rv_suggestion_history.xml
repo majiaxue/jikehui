@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/dp_345"
+    android:layout_height="wrap_content"
+    android:background="@drawable/edit_5_fff_border">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_18"
+        android:layout_marginTop="@dimen/dp_22"
+        android:includeFontPadding="false"
+        android:text="反馈内容："
+        android:textColor="#999999"
+        android:textSize="@dimen/sp_13" />
+
+    <TextView
+        android:id="@+id/rv_suggestion_history_feedback_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/dp_17"
+        android:layout_marginRight="@dimen/dp_22"
+        android:includeFontPadding="false"
+        android:textColor="#999999"
+        android:textSize="@dimen/sp_11" />
+
+    <TextView
+        android:id="@+id/rv_suggestion_history_feedback_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_18"
+        android:layout_marginTop="@dimen/dp_52"
+        android:layout_marginRight="@dimen/dp_21"
+        android:layout_marginBottom="@dimen/dp_17"
+        android:includeFontPadding="false"
+        android:textColor="#333333"
+        android:textSize="@dimen/sp_15" />
+
+    <RelativeLayout
+        android:id="@+id/rv_suggestion_history_rela"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rv_suggestion_history_feedback_content">
+
+        <View
+            android:id="@+id/rv_suggestion_history_temp1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_1"
+            android:layout_marginLeft="@dimen/dp_19"
+            android:layout_marginRight="@dimen/dp_21"
+            android:background="#eeeeee" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rv_suggestion_history_temp1"
+            android:layout_marginLeft="@dimen/dp_18"
+            android:layout_marginTop="@dimen/dp_19"
+            android:includeFontPadding="false"
+            android:text="回复内容："
+            android:textColor="#999999"
+            android:textSize="@dimen/sp_13" />
+
+        <TextView
+            android:id="@+id/rv_suggestion_history_reply_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rv_suggestion_history_temp1"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/dp_12"
+            android:layout_marginRight="@dimen/dp_22"
+            android:includeFontPadding="false"
+            android:textColor="#999999"
+            android:textSize="@dimen/sp_11" />
+
+        <TextView
+            android:id="@+id/rv_suggestion_history_reply_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rv_suggestion_history_temp1"
+            android:layout_marginLeft="@dimen/dp_18"
+            android:layout_marginTop="@dimen/dp_46"
+            android:layout_marginRight="@dimen/dp_21"
+            android:layout_marginBottom="@dimen/dp_17"
+            android:includeFontPadding="false"
+            android:textColor="#333333"
+            android:textSize="@dimen/sp_15" />
+    </RelativeLayout>
+</RelativeLayout>

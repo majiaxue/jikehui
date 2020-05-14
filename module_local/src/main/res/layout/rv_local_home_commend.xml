@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/dp_106"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_3_fff"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/rv_local_home_commend_img"
+        android:layout_width="@dimen/dp_97"
+        android:layout_height="@dimen/dp_87"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dp_5"
+        android:src="@drawable/img_501" />
+
+    <TextView
+        android:id="@+id/rv_local_home_commend_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp_3"
+        android:ellipsize="end"
+        android:includeFontPadding="false"
+        android:maxLines="1"
+        android:text="秘制虾尾+毛豆花生"
+        android:textColor="#333333"
+        android:textSize="@dimen/sp_10" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_5"
+        android:layout_marginBottom="@dimen/dp_5"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/rv_local_home_commend_new_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:includeFontPadding="false"
+            android:text="￥89"
+            android:textColor="#f00821"
+            android:textSize="@dimen/sp_10" />
+
+        <TextView
+            android:id="@+id/rv_local_home_commend_old_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:includeFontPadding="false"
+            android:text="￥109"
+            android:textColor="#999999"
+            android:textSize="@dimen/sp_10" />
+    </LinearLayout>
+</LinearLayout>

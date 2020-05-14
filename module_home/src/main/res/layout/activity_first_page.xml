@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.example.view.WindowInsetsFrameLayout
+        android:id="@+id/first_page_frame"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <RadioGroup
+        android:id="@+id/first_page_group"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_49"
+        android:background="#FFFFFF"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/first_page_home"
+            style="@style/main_bottom_back"
+            android:checked="true"
+            android:drawableTop="@drawable/bg_home"
+            android:paddingTop="@dimen/dp_7"
+            android:text="首页"
+            android:textColor="@color/color_f23_010" />
+
+        <RadioButton
+            android:id="@+id/first_page_tbk"
+            style="@style/main_bottom_back"
+            android:drawableTop="@drawable/bg_super_brand"
+            android:paddingTop="@dimen/dp_7"
+            android:text="品牌"
+            android:textColor="@color/color_f23_010" />
+
+        <RadioButton
+            android:id="@+id/first_page_local"
+            style="@style/main_bottom_back"
+            android:drawableTop="@drawable/bg_hairring"
+            android:paddingTop="@dimen/dp_7"
+            android:text="社区"
+            android:textColor="@color/color_f23_010" />
+
+        <RadioButton
+            android:id="@+id/first_page_mine"
+            style="@style/main_bottom_back"
+            android:drawableTop="@drawable/bg_mine"
+            android:paddingTop="@dimen/dp_7"
+            android:text="我的"
+            android:textColor="@color/color_f23_010" />
+    </RadioGroup>
+
+</LinearLayout>

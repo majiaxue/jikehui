@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="@dimen/dp_273"
+        android:layout_height="@dimen/dp_328"
+        android:background="@drawable/bg_corner_radius10">
+
+        <ImageView
+            android:id="@+id/pop_ding_wei_image"
+            android:layout_width="@dimen/dp_40"
+            android:layout_height="@dimen/dp_40"
+            android:layout_alignParentRight="true"
+            android:padding="@dimen/dp_15"
+            android:src="@drawable/icon_guanbi" />
+
+        <ImageView
+            android:layout_width="@dimen/dp_157"
+            android:layout_height="@dimen/dp_123"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dp_37"
+            android:src="@drawable/img_dingwei" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dp_184"
+            android:includeFontPadding="false"
+            android:text="开启定位"
+            android:textColor="#fd3c15"
+            android:textSize="@dimen/sp_18" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dp_217"
+            android:includeFontPadding="false"
+            android:text="位置更精准  时间才短暂"
+            android:textColor="#999999"
+            android:textSize="@dimen/sp_14" />
+
+        <TextView
+            android:id="@+id/pop_ding_wei_bottom"
+            android:layout_width="@dimen/dp_153"
+            android:layout_height="@dimen/dp_33"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/dp_27"
+            android:background="@drawable/button_dingwei"
+            android:gravity="center"
+            android:text="立刻开启"
+            android:textColor="#fffefe"
+            android:textSize="@dimen/sp_18" />
+
+    </RelativeLayout>
+
+</LinearLayout>

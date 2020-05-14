@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/dp_5">
+
+    <View
+        android:layout_width="@dimen/dp_4"
+        android:layout_height="@dimen/dp_4"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:background="@drawable/circle_4_f23d3d" />
+
+    <TextView
+        android:id="@+id/rv_vp_operator_factor_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_5"
+        android:includeFontPadding="false"
+        android:text="自购订单数量："
+        android:textColor="#666666"
+        android:textSize="@dimen/sp_11" />
+</LinearLayout>

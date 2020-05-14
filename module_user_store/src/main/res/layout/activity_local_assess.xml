@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/page_top" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dp_45"
+        android:includeFontPadding="false"
+        android:text="本次订单已完成"
+        android:textColor="#333333"
+        android:textSize="@dimen/sp_24" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dp_14"
+        android:includeFontPadding="false"
+        android:text="请对本商家进行评价"
+        android:textColor="#666666"
+        android:textSize="@dimen/sp_16" />
+
+    <View
+        android:layout_width="@dimen/dp_153"
+        android:layout_height="@dimen/dp_1"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dp_18"
+        android:background="#eeeeee" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_32"
+        android:layout_marginTop="@dimen/dp_22"
+        android:layout_marginRight="@dimen/dp_38">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="总评价"
+            android:textColor="#333333"
+            android:textSize="@dimen/sp_14" />
+
+        <com.example.view.RatingBarView
+            android:id="@+id/local_assess_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            app:starEmpty="@drawable/icon_haopingweixuanzhong"
+            app:starFill="@drawable/icon_haopingxingxing"
+            app:starImageSize="@dimen/dp_18" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_32"
+        android:layout_marginTop="@dimen/dp_22"
+        android:layout_marginRight="@dimen/dp_38">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="服务态度"
+            android:textColor="#333333"
+            android:textSize="@dimen/sp_14" />
+
+        <com.example.view.RatingBarView
+            android:id="@+id/local_assess_serve"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            app:starEmpty="@drawable/icon_haopingweixuanzhong"
+            app:starFill="@drawable/icon_haopingxingxing"
+            app:starImageSize="@dimen/dp_18" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_32"
+        android:layout_marginTop="@dimen/dp_22"
+        android:layout_marginRight="@dimen/dp_38">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="描述相符"
+            android:textColor="#333333"
+            android:textSize="@dimen/sp_14" />
+
+        <com.example.view.RatingBarView
+            android:id="@+id/local_assess_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            app:starEmpty="@drawable/icon_haopingweixuanzhong"
+            app:starFill="@drawable/icon_haopingxingxing"
+            app:starImageSize="@dimen/dp_18" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_32"
+        android:layout_marginTop="@dimen/dp_36"
+        android:text="其他建议"
+        android:textColor="#333333"
+        android:textSize="@dimen/sp_16" />
+
+    <EditText
+        android:id="@+id/local_assess_edit"
+        android:layout_width="@dimen/dp_305"
+        android:layout_height="@dimen/dp_87"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dp_11"
+        android:background="@drawable/bg_5_f5f5f5"
+        android:gravity="start"
+        android:hint="请填写对该商家的一些建议"
+        android:padding="@dimen/dp_13"
+        android:textColor="#333333"
+        android:textColorHint="#666666"
+        android:textSize="@dimen/sp_13" />
+
+    <TextView
+        android:id="@+id/local_assess_btn"
+        android:layout_width="@dimen/dp_300"
+        android:layout_height="@dimen/dp_44"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dp_40"
+        android:background="@drawable/bg_22_feb_fb4"
+        android:gravity="center"
+        android:text="提  交"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/sp_18" />
+</LinearLayout>

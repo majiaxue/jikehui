@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="534dp"
+        android:background="@drawable/bg_10_fff_top">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dp_10"
+            android:text="请选择地址"
+            android:textColor="#232323"
+            android:textSize="@dimen/dp_16" />
+
+        <ImageView
+            android:id="@+id/address_select_close"
+            android:layout_width="@dimen/dp_30"
+            android:layout_height="@dimen/dp_30"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/dp_5"
+            android:layout_marginRight="@dimen/dp_5"
+            android:padding="@dimen/dp_10"
+            android:src="@drawable/icon_guanbi10" />
+
+        <com.example.view.addressselect.AddressSelector
+            android:id="@+id/address_selector"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/address_select_close"></com.example.view.addressselect.AddressSelector>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

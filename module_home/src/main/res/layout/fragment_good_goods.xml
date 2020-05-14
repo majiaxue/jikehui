@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/good_goods_linear"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_15"
+            android:layout_marginTop="@dimen/dp_20"
+            android:layout_marginRight="@dimen/dp_15"
+            android:background="@drawable/dfsdf"
+            android:elevation="@dimen/dp_5"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/good_goods_image"
+                android:layout_width="@dimen/dp_284"
+                android:layout_height="@dimen/dp_223"
+                android:layout_marginTop="@dimen/dp_20"
+                android:scaleType="fitXY" />
+
+            <TextView
+                android:id="@+id/good_goods_name"
+                android:layout_width="@dimen/dp_255"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_38"
+                android:text="清风抽纸原木纯品3层120抽30包加量中规卫生面纸巾餐巾纸整箱24+6" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_20"
+                android:layout_marginTop="@dimen/dp_24"
+                android:layout_marginRight="@dimen/dp_20">
+
+                <TextView
+                    android:id="@+id/good_goods_preferential_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="￥49.9"
+                    android:textColor="#fb3912"
+                    android:textSize="@dimen/sp_24" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="券后"
+                    android:textColor="#fb3912"
+                    android:textSize="@dimen/sp_12" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1px"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/good_goods_original_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="￥59.9"
+                    android:textColor="#666666"
+                    android:textSize="@dimen/sp_15" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_20"
+                android:layout_marginTop="@dimen/dp_13"
+                android:layout_marginRight="@dimen/dp_20"
+                android:layout_marginBottom="@dimen/dp_40">
+
+                <LinearLayout
+                    android:layout_width="@dimen/dp_89"
+                    android:layout_height="@dimen/dp_22"
+                    android:background="@drawable/kdjfsf"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/good_goods_coupon_price"
+                        android:layout_width="@dimen/dp_50"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:includeFontPadding="false"
+                        android:text="￥10"
+                        android:textColor="#ffffff"
+                        android:textSize="@dimen/sp_15" />
+
+                    <TextView
+                        android:layout_width="@dimen/dp_40"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:includeFontPadding="false"
+                        android:text="券"
+                        android:textColor="#ffffff"
+                        android:textSize="@dimen/sp_12" />
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1px"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/good_goods_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#666666"
+                    android:textSize="@dimen/sp_15" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="@dimen/dp_100"
+            android:layout_height="@dimen/dp_100"
+            android:layout_marginTop="@dimen/dp_30"
+            android:background="@drawable/fgdsfgd"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/good_goods_qr_code"
+                android:layout_width="@dimen/dp_95"
+                android:layout_height="@dimen/dp_95" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_15"
+            android:text="长按识别二维码"
+            android:textColor="#222222"
+            android:textSize="@dimen/sp_12" />
+    </LinearLayout>
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/good_goods_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/good_goods_rv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:overScrollMode="never" />
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+</RelativeLayout>

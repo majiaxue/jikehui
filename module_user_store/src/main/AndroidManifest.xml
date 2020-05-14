@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.user_store">
+
+    <application
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:allowBackup">
+        <activity
+            android:name="com.example.location.LocationActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"></activity>
+        <activity
+            android:name=".UserActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.goods_detail.GoodsDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.assess.AssessActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.shop_home.ShopHomeActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.example.type_detail.TypeDetailActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.confirm_order.ConfirmOrderActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.example.payment.PaymentActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.search.UserSearchActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.order_confirm.OrderConfirmActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.example.pay_success.PaySuccessActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.order_detail.OrderDetailActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.example.local_list.LocalListActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.example.local_detail.LocalDetailActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.example.local_coupon.LocalCouponActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.example.local_pay.LocalPayActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.example.local_mingxi.LocalMingxiActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.example.local_assess.LocalAssessActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.example.map_detail.MapDetailActivity"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>

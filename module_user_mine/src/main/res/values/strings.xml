@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">module_user_mine</string>
+
+    <string name="un_follow">取消关注</string>
+</resources>

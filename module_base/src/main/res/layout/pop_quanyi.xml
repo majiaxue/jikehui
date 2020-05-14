@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/dp_325"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/pop_quanyi_temp"
+        android:layout_width="@dimen/dp_300"
+        android:layout_height="@dimen/dp_370"
+        android:layout_marginLeft="@dimen/dp_25"
+        android:layout_marginTop="@dimen/dp_18"
+        android:background="@drawable/bg_miaoshu"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/pop_quanyi_level"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_53"
+            android:layout_marginTop="@dimen/dp_18"
+            android:text="升级为金牌会员"
+            android:textSize="@dimen/sp_28" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_53"
+            android:layout_marginTop="@dimen/dp_4"
+            android:text="您将享受如下特权"
+            android:textColor="#875940"
+            android:textSize="@dimen/sp_12" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/pop_quanyi_rv"
+            android:layout_width="@dimen/dp_250"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal" />
+
+        <View
+            android:layout_width="@dimen/dp_0"
+            android:layout_height="@dimen/dp_0"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/pop_quanyi_btn"
+            android:layout_width="@dimen/dp_185"
+            android:layout_height="@dimen/dp_43"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/dp_24"
+            android:background="@drawable/bg_21_dbb292"
+            android:elevation="@dimen/dp_4"
+            android:gravity="center"
+            android:text="立即升级"
+            android:textColor="#78482f"
+            android:textSize="@dimen/sp_15" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/pop_quanyi_cancel"
+        android:layout_width="@dimen/dp_26"
+        android:layout_height="@dimen/dp_26"
+        android:layout_below="@id/pop_quanyi_temp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/dp_24"
+        android:layout_marginRight="@dimen/dp_137"
+        android:src="@drawable/icon_guanbi" />
+
+    <ImageView
+        android:layout_width="@dimen/dp_60"
+        android:layout_height="@dimen/dp_71"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/dp_12"
+        android:src="@drawable/sidai_shang" />
+
+    <ImageView
+        android:layout_width="@dimen/dp_80"
+        android:layout_height="@dimen/dp_51"
+        android:layout_marginTop="@dimen/dp_355"
+        android:src="@drawable/sidai_xia" />
+</RelativeLayout>
