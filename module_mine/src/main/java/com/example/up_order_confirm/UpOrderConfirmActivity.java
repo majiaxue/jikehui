@@ -130,7 +130,7 @@ public class UpOrderConfirmActivity extends BaseActivity<UpOrderConfirmView, UpO
         upOrderBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                upOrderBtn.setEnabled(false);
+                //upOrderBtn.setEnabled(false);
                 presenter.commit(isWeChat, confirmBean, name, levelId);
 
             }

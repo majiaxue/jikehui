@@ -208,7 +208,12 @@ public class CommodityDetailsActivity extends BaseActivity<CommodityDetailsView,
         commodityImmediatelyReceive.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                popupwindow();
+                if (TextUtils.isEmpty(SPUtil.getToken())){
+                    PopUtils.isLogin(CommodityDetailsActivity.this);
+                }else {
+                    popupwindow();
+                }
+
 
             }
         });
@@ -216,7 +221,11 @@ public class CommodityDetailsActivity extends BaseActivity<CommodityDetailsView,
         commodityLedSecurities.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                popupwindow();
+                if (TextUtils.isEmpty(SPUtil.getToken())){
+                    PopUtils.isLogin(CommodityDetailsActivity.this);
+                }else {
+                    popupwindow();
+                }
             }
         });
         //收藏

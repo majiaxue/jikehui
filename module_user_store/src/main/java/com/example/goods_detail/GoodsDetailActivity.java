@@ -9,6 +9,7 @@ import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.StaggeredGridLayoutManager;
 import android.text.SpannableString;
 import android.text.Spanned;
+import android.text.TextUtils;
 import android.text.style.ForegroundColorSpan;
 import android.view.Gravity;
 import android.view.LayoutInflater;
@@ -228,12 +229,17 @@ public class GoodsDetailActivity extends BaseActivity<GoodsDetailView, GoodsDeta
         goodsDetailLingquan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (amount==0){
-                    Toast.makeText(GoodsDetailActivity.this, "无可领优惠券", Toast.LENGTH_SHORT).show();
+                if (TextUtils.isEmpty(SPUtil.getToken())) {
+                    PopUtils.isLogin(GoodsDetailActivity.this);
                 }else {
-                    presenter.lingquan();
-                    //popup();
+                    if (amount==0){
+                        Toast.makeText(GoodsDetailActivity.this, "无可领优惠券", Toast.LENGTH_SHORT).show();
+                    }else {
+                        presenter.lingquan();
+                        //popup();
+                    }
                 }
+
             }
         });
 

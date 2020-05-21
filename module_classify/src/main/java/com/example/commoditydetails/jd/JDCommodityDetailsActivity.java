@@ -226,11 +226,16 @@ public class JDCommodityDetailsActivity extends BaseActivity<JDCommodityDetailsV
         commodityImmediatelyReceive.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (commodityCouponPrice.getText().toString().equals("暂无优惠")){
-                    presenter.clickLedSecurities(qRImage);
+                if (TextUtils.isEmpty(SPUtil.getToken())){
+                    PopUtils.isLogin(JDCommodityDetailsActivity.this);
                 }else {
-                    popupwindow();
+                    if (commodityCouponPrice.getText().toString().equals("暂无优惠")){
+                        presenter.clickLedSecurities(qRImage);
+                    }else {
+                        popupwindow();
+                    }
                 }
+
             }
         });
 
@@ -243,11 +248,16 @@ public class JDCommodityDetailsActivity extends BaseActivity<JDCommodityDetailsV
 //                } else {
 //                    presenter.clickLedSecurities(listsBeanList.getData().get(0).getMaterialUrl());
 //                }
-                if (commodityCouponPrice.getText().toString().equals("暂无优惠")){
-                    presenter.clickLedSecurities(qRImage);
+                if (TextUtils.isEmpty(SPUtil.getToken())){
+                    PopUtils.isLogin(JDCommodityDetailsActivity.this);
                 }else {
-                    popupwindow();
+                    if (commodityCouponPrice.getText().toString().equals("暂无优惠")){
+                        presenter.clickLedSecurities(qRImage);
+                    }else {
+                        popupwindow();
+                    }
                 }
+
             }
         });
         //收藏

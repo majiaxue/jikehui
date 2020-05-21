@@ -1719,10 +1719,11 @@ public class GoodsDetailPresenter extends BasePresenter<GoodsDetailView> {
     }
 
     public void callServe() {
-        Intent intent = new Intent(Intent.ACTION_DIAL);
-        Uri data = Uri.parse("tel:" + CommonResource.SERVICE_PHONE);
-        intent.setData(data);
-        mContext.startActivity(intent);
+        ARouter.getInstance().build("/mine/contactus").navigation();
+//        Intent intent = new Intent(Intent.ACTION_DIAL);
+//        Uri data = Uri.parse("tel:" + CommonResource.SERVICE_PHONE);
+//        intent.setData(data);
+//        mContext.startActivity(intent);
     }
 
     public void seeBigPicture(int position) {

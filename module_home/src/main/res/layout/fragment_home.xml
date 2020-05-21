@@ -112,6 +112,7 @@
                     android:orientation="vertical">
 
                     <LinearLayout
+                        android:visibility="gone"
                         android:id="@+id/linear"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -371,6 +372,18 @@
                                 android:text="打卡的鸟儿有虫吃"
                                 android:textColor="#999999"
                                 android:textSize="@dimen/sp_12" />
+                            <TextView
+                                android:id="@+id/text113"
+                                android:layout_width="@dimen/dp_72"
+                                android:layout_height="@dimen/dp_24"
+                                android:layout_below="@id/text131"
+                                android:layout_alignLeft="@id/image131"
+                                android:layout_marginTop="@dimen/dp_23"
+                                android:background="@drawable/shape_text_bg_look_left"
+                                android:gravity="center"
+                                android:text="立即查看"
+                                android:textColor="#ffffff"
+                                android:textSize="@dimen/sp_12" />
 
                             <ImageView
                                 android:layout_width="@dimen/dp_83"
@@ -407,6 +420,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_marginLeft="@dimen/dp_10"
                                 android:layout_toRightOf="@id/image141"
+                                android:layout_alignTop="@id/image141"
                                 android:includeFontPadding="false"
                                 android:text="聚划算"
                                 android:textColor="#222222"
@@ -421,6 +435,18 @@
                                 android:layout_marginTop="@dimen/dp_10"
                                 android:text="免单福利砸中你"
                                 android:textColor="#999999"
+                                android:textSize="@dimen/sp_12" />
+                            <TextView
+                                android:id="@+id/text114"
+                                android:layout_width="@dimen/dp_72"
+                                android:layout_height="@dimen/dp_24"
+                                android:layout_below="@id/text141"
+                                android:layout_alignLeft="@id/image141"
+                                android:layout_marginTop="@dimen/dp_23"
+                                android:background="@drawable/shape_text_bg_look_right"
+                                android:gravity="center"
+                                android:text="立即查看"
+                                android:textColor="#ffffff"
                                 android:textSize="@dimen/sp_12" />
 
                             <ImageView

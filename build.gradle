@@ -44,7 +44,7 @@ ext {
     minSdkVersion = 19
     targetSdkVersion = 28
     versionCode = 1
-    versionName = "1.6.0"
+    versionName = "1.6.5"
     butterknifeVersion = "9.0.0"
     isDebugType = true
     arouterApi = "1.4.1"

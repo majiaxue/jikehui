@@ -71,7 +71,7 @@
                     android:layout_centerVertical="true"
                     android:layout_marginLeft="@dimen/dp_20"
                     android:includeFontPadding="false"
-                    android:text="请选择收获地址"
+                    android:text="请选择收货地址"
                     android:textColor="#333333"
                     android:textSize="@dimen/sp_15"
                     android:visibility="gone" />

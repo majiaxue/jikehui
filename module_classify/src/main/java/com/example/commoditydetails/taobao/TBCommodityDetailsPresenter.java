@@ -241,8 +241,10 @@ public class TBCommodityDetailsPresenter extends BasePresenter<TBCommodityDetail
     }
 
     public void historySave(String goodsId) {
-        Map map = MapUtil.getInstance().addParms("productId", goodsId).addParms("userCode", SPUtil.getUserCode()).addParms("type", 3).build();
-        Observable data = RetrofitUtil.getInstance().getApi(CommonResource.BASEURL_4001).getData(CommonResource.HISTORYSAVE, map);
+        tbGoodsDetailsBean.getData().setDetailPics("");
+        String jsonString = JSON.toJSONString(tbGoodsDetailsBean.getData());
+        Map map = MapUtil.getInstance().addParms("productId", goodsId).addParms("userCode", SPUtil.getUserCode()).addParms("type", 3).addParms("product",jsonString).build();
+        Observable data = RetrofitUtil.getInstance().getApi(CommonResource.BASEURL_4001).getHead(CommonResource.HISTORYSAVE, map,SPUtil.getToken());
         RetrofitUtil.getInstance().toSubscribe(data, new OnMyCallBack(new OnDataListener() {
             @Override
             public void onSuccess(String result, String msg) {
@@ -384,7 +386,7 @@ public class TBCommodityDetailsPresenter extends BasePresenter<TBCommodityDetail
                     } catch (JSONException e) {
                         e.printStackTrace();
                     }
-                    tbLedSecuritiesBean = JSON.parseObject(data1, new TypeReference<TBLedSecuritiesBean>() {
+                    tbLedSecuritiesBean = JSON.parseObject(result, new TypeReference<TBLedSecuritiesBean>() {
                     }.getType());
                     if (tbLedSecuritiesBean != null) {
                         if (getView() != null) {

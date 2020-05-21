@@ -318,17 +318,19 @@ public class HomePresenter extends BasePresenter<HomeView> {
 
         strings = new ArrayList<>();
         strings.add(new BaseRecImageAndTextBean("淘宝", R.drawable.icon_taobao1));//0
-        strings.add(new BaseRecImageAndTextBean("淘抢购", R.drawable.icon_taoqianggou1));//1
-        strings.add(new BaseRecImageAndTextBean("拼多多", R.drawable.icon_pinduoduo1));//2
+        strings.add(new BaseRecImageAndTextBean("拼多多", R.drawable.icon_pinduoduo1));//1
+        strings.add(new BaseRecImageAndTextBean("京东", R.drawable.icon_jingdong1));//2
 //        strings.add(new BaseRecImageAndTextBean("今日免单", R.drawable.icon_miandan1));//3
         //strings.add(new BaseRecImageAndTextBean("产品中心", R.drawable.icon_cpzx));//3
 //        strings.add(new BaseRecImageAndTextBean("商城", R.drawable.icon_shangcheng1));
-        strings.add(new BaseRecImageAndTextBean("京东", R.drawable.icon_jingdong1));//4----3
-        strings.add(new BaseRecImageAndTextBean("同城商家", R.drawable.icon_xiaodian1));//5------4
-        strings.add(new BaseRecImageAndTextBean("天猫", R.drawable.icon_tianmao1));//6---------5
+        strings.add(new BaseRecImageAndTextBean("天猫", R.drawable.icon_tianmao1));//4----3
+        strings.add(new BaseRecImageAndTextBean("淘抢购", R.drawable.icon_taoqianggou1));//5------4
+        strings.add(new BaseRecImageAndTextBean("同城商家", R.drawable.icon_xiaodian1));//6---------5
         strings.add(new BaseRecImageAndTextBean("9.9包邮", R.drawable.icon_9));//7------6
        // strings.add(new BaseRecImageAndTextBean("聚划算", R.drawable.icon_juhuasuan1));//
         strings.add(new BaseRecImageAndTextBean("打卡签到", R.drawable.icon_qiandao1));//9----------7
+
+        //1-------淘抢购  2--拼多多  3---京东  4----同城商家  5---天猫  6---9.9包邮  7--打卡签到
 
         HomeTopRecAdapter homeTopRecAdapter = new HomeTopRecAdapter(mContext, strings, R.layout.item_home_top_rec);
         homeTopRec.setAdapter(homeTopRecAdapter);
@@ -379,7 +381,7 @@ public class HomePresenter extends BasePresenter<HomeView> {
             @Override
             public void onItemClick(RecyclerView parent, View view, int position) {
                 //0淘宝  2 拼多多 3京东 6天猫
-                if (position == 0 || position == 2 || position == 3 || position == 5) {
+                if (position == 0 || position == 2 || position == 3 || position == 1) {
                     ARouter.getInstance().build("/module_home/SecondaryDetailsActivity")
                             .withString("type", position + "")
                             .navigation();
@@ -394,7 +396,7 @@ public class HomePresenter extends BasePresenter<HomeView> {
 //                }
                 else if (position == 7) {
                     ARouter.getInstance().build("/module_home/PunchSignActivity").navigation();
-                }  else if (position == 1) {
+                }  else if (position == 4) {
                     ARouter.getInstance().build("/module_home/UniversalListActivity").withInt("position", 1).navigation();
                 } else if (position == 6) {
                     ARouter.getInstance().build("/module_home/UniversalListActivity").withInt("position", 2).navigation();
@@ -402,7 +404,7 @@ public class HomePresenter extends BasePresenter<HomeView> {
 //                else if (position == 7) {
 //                    ARouter.getInstance().build("/module_home/UniversalListActivity").withInt("position", 3).navigation();
 //                }
-                else if (position == 4) {
+                else if (position == 5) {
                     if (TextUtils.isEmpty(SPUtil.getToken())) {
                         PopUtils.isLogin(mContext);
                     } else {

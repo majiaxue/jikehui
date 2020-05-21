@@ -10,6 +10,7 @@ import android.support.v7.widget.RecyclerView;
 import android.text.Html;
 import android.text.SpannableString;
 import android.text.Spanned;
+import android.text.TextUtils;
 import android.text.style.ForegroundColorSpan;
 import android.view.Gravity;
 import android.view.LayoutInflater;
@@ -190,8 +191,11 @@ public class TBCommodityDetailsActivity extends BaseActivity<TBCommodityDetailsV
         commodityImmediatelyReceive.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-                popupwindow();
+                if (TextUtils.isEmpty(SPUtil.getToken())) {
+                    PopUtils.isLogin(TBCommodityDetailsActivity.this);
+                }else {
+                    popupwindow();
+                }
             }
         });
         //回到首页
@@ -223,7 +227,12 @@ public class TBCommodityDetailsActivity extends BaseActivity<TBCommodityDetailsV
             @Override
             public void onClick(View v) {
                // ProcessDialogUtil.showProcessDialog(TBCommodityDetailsActivity.this);
-                popupwindow();
+                if (TextUtils.isEmpty(SPUtil.getToken())) {
+                    PopUtils.isLogin(TBCommodityDetailsActivity.this);
+                }else {
+                    popupwindow();
+                }
+
 
 
             }

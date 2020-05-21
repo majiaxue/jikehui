@@ -64,10 +64,10 @@ public class BalancePresenter extends BasePresenter<BalanceView> {
         incomeFragment = new IncomeFragment();
         payoutFragment = new PayoutFragment();
         FragmentTransaction transaction = this.fragmentManager.beginTransaction();
-        transaction.add(resId, incomeFragment)
-                .add(resId, payoutFragment)
-                .show(incomeFragment)
-                .hide(payoutFragment)
+        transaction.add(resId, payoutFragment)
+                .add(resId, incomeFragment)
+                .show(payoutFragment)
+                .hide(incomeFragment)
                 .commit();
     }
 

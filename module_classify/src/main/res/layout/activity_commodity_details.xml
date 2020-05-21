@@ -149,6 +149,7 @@
                         android:visibility="visible">
 
                         <LinearLayout
+
                             android:layout_width="@dimen/dp_199"
                             android:layout_height="match_parent"
                             android:gravity="center"

@@ -69,9 +69,9 @@ public class BalanceActivity extends BaseFragmentActivity<BalanceView, BalancePr
         balanceSrjl.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                balanceSrjlCheck.setImageResource(R.drawable.circle_16_fb4119);
+                balanceZcjlCheck.setImageResource(R.drawable.circle_16_fb4119);
                 balanceSrjlTxt.setTextColor(Color.parseColor("#f23d3d"));
-                balanceZcjlCheck.setImageResource(R.drawable.circle_16_border_000);
+                balanceSrjlCheck.setImageResource(R.drawable.circle_16_border_000);
                 balanceZcjlTxt.setTextColor(Color.parseColor("#333333"));
                 presenter.changeView(1);
             }
@@ -80,9 +80,9 @@ public class BalanceActivity extends BaseFragmentActivity<BalanceView, BalancePr
         balanceZcjl.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                balanceZcjlCheck.setImageResource(R.drawable.circle_16_fb4119);
+                balanceSrjlCheck.setImageResource(R.drawable.circle_16_fb4119);
                 balanceSrjlTxt.setTextColor(Color.parseColor("#333333"));
-                balanceSrjlCheck.setImageResource(R.drawable.circle_16_border_000);
+                balanceZcjlCheck.setImageResource(R.drawable.circle_16_border_000);
                 balanceZcjlTxt.setTextColor(Color.parseColor("#f23d3d"));
                 presenter.changeView(0);
             }

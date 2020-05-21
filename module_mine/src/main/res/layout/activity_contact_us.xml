@@ -14,7 +14,7 @@
 
         <LinearLayout
             android:layout_width="@dimen/dp_305"
-            android:layout_height="@dimen/dp_290"
+            android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="@dimen/dp_43"
             android:background="@drawable/pop_clear_cache"
@@ -36,6 +36,12 @@
                 android:text="@string/service_phone"
                 android:textColor="#333333"
                 android:textSize="@dimen/sp_14" />
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dp_20"
+                android:layout_width="@dimen/dp_140"
+                android:layout_height="@dimen/dp_140"
+                android:src="@drawable/erweima"/>
 
             <TextView
                 android:visibility="gone"
@@ -49,6 +55,7 @@
                 android:textSize="@dimen/sp_14"/>
 
             <TextView
+                android:layout_marginBottom="@dimen/dp_19"
                 android:id="@+id/contact_us_call"
                 android:layout_width="@dimen/dp_257"
                 android:layout_height="@dimen/dp_44"

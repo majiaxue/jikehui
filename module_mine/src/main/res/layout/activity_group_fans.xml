@@ -130,7 +130,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:includeFontPadding="false"
-                    android:text="李老师"
+                    android:text=""
                     android:textColor="#e95348"
                     android:textSize="@dimen/sp_10" />
             </LinearLayout>

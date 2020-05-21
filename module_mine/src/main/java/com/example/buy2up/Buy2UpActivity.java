@@ -143,7 +143,13 @@ public class Buy2UpActivity extends BaseActivity<Buy2UpView, Buy2UpPresenter> im
                 }else if (Integer.parseInt(bean.getLevelId())==2&&citys==null){
                     presenter.isCanUp(bean.getLevelId(), String.valueOf(bean.getId()),"");
                 }else {
-                    presenter.isCanUp(bean.getLevelId(), String.valueOf(bean.getId()),pri+citys+qu);
+                    if (citys.contains("市")){
+                        citys.substring(0,citys.indexOf("市"));
+                        LogUtil.e("这是截取的城市"+citys.substring(0,citys.indexOf("市")));
+                        presenter.isCanUp(bean.getLevelId(), String.valueOf(bean.getId()),pri+citys.substring(0,citys.indexOf("市"))+qu);
+                    }else {
+                        presenter.isCanUp(bean.getLevelId(), String.valueOf(bean.getId()),pri+citys+qu);
+                    }
                     LogUtil.e("这是地址"+citys+qu);
                 }
             }

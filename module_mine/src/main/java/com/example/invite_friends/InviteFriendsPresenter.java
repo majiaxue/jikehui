@@ -42,7 +42,7 @@ public class InviteFriendsPresenter extends BasePresenter<InviteFriendsView> {
     }
 
     public void loadData() {
-        Bitmap qrImage1 = QRCode.createQRImage(CommonResource.BASEURL_4001 + CommonResource.INVITE_ERWEIMA + "?inviteCode=" + SPUtil.getStringValue(CommonResource.USER_INVITE), (int) mContext.getResources().getDimension(R.dimen.dp_193), (int) mContext.getResources().getDimension(R.dimen.dp_193));
+        Bitmap qrImage1 = QRCode.createQRImage(CommonResource.INVITE + CommonResource.INVITE_ERWEIMA + "?inviteCode=" + SPUtil.getStringValue(CommonResource.USER_INVITE), (int) mContext.getResources().getDimension(R.dimen.dp_193), (int) mContext.getResources().getDimension(R.dimen.dp_193));
 //        View view1 = LayoutInflater.from(mContext).inflate(R.layout.vp_invite_view1, null);
 //        ImageView img1 = view1.findViewById(R.id.invite_friends_erweima1);
 //        Glide.with(mContext).load(qrImage1).into(img1);
@@ -67,7 +67,7 @@ public class InviteFriendsPresenter extends BasePresenter<InviteFriendsView> {
     }
 
     public void shareLink() {
-        UMWeb umWeb = new UMWeb(CommonResource.BASEURL_4001 + "/rest/share/register?inviteCode=" + SPUtil.getStringValue(CommonResource.USER_INVITE));
+        UMWeb umWeb = new UMWeb(CommonResource.INVITE + "/rest/share/register?inviteCode=" + SPUtil.getStringValue(CommonResource.USER_INVITE));
         umWeb.setTitle("您有一个邀请信息");
         umWeb.setThumb(new UMImage(mContext, R.drawable.app_logo));
         umWeb.setDescription("赶紧加入领取高佣吧！！！");
