@@ -592,6 +592,42 @@
                         android:textColor="#666666"
                         android:textSize="@dimen/sp_10" />
                 </LinearLayout>
+                <View
+                    android:layout_width="@dimen/dp_1"
+                    android:layout_height="@dimen/dp_81"
+                    android:background="#dfecf5" />
+                <LinearLayout
+                    android:visibility="gone"
+                    android:id="@+id/hehuoren_fans"
+                    android:layout_width="@dimen/dp_0"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="@dimen/dp_42"
+                        android:layout_height="@dimen/dp_33"
+                        android:src="@drawable/douquan" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_8"
+                        android:text="合伙人粉丝"
+                        android:textColor="#222222"
+                        android:textSize="@dimen/sp_12" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_5"
+                        android:includeFontPadding="false"
+                        android:text="合伙人粉丝"
+                        android:textColor="#666666"
+                        android:textSize="@dimen/sp_10" />
+                </LinearLayout>
+
             </LinearLayout>
         </LinearLayout>
 

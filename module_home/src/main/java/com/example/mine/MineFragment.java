@@ -10,15 +10,18 @@ import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import com.alibaba.android.arouter.launcher.ARouter;
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.RequestOptions;
 import com.example.bean.HomePredictBean;
 import com.example.bean.UserInfoBean;
+import com.example.common.CommonResource;
 import com.example.entity.EventBusBean;
 import com.example.mine.adapter.MyToolAdapter;
 import com.example.module_home.R;
 import com.example.module_home.R2;
 import com.example.mvp.BaseFragment;
+import com.example.utils.LogUtil;
 import com.example.utils.SPUtil;
 import com.example.utils.SpaceItemDecoration;
 import com.example.utils.StatusBarUtils;
@@ -88,6 +91,8 @@ public class MineFragment extends BaseFragment<MineView, MinePresenter> implemen
     TextView mInviteFriend;
     @BindView(R2.id.mine_shangyueyugu)
     TextView mSyyg;
+    @BindView(R2.id.hehuoren_fans)
+    LinearLayout hehuoren_fans;
 
     private UserInfoBean userInfo;
     private boolean flag = false;
@@ -104,10 +109,23 @@ public class MineFragment extends BaseFragment<MineView, MinePresenter> implemen
        // Glide.with(getContext()).load(R.drawable.iwantup).into(mIWantUp);
         presenter.loadRec();
         mineParent.setOnScrollChangeListener(this);
+        String levelid = SPUtil.getStringValue(CommonResource.LEVELID);
+        LogUtil.e("levelid--------"+levelid);
+        if (levelid.equals("4")){
+            hehuoren_fans.setVisibility(View.VISIBLE);
+        }else {
+            hehuoren_fans.setVisibility(View.GONE);
+        }
     }
 
     @Override
     public void initClick() {
+        hehuoren_fans.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                ARouter.getInstance().build("/model_home/PartnerActivity").navigation();
+            }
+        });
         mineHeader.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

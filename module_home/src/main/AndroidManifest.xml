@@ -47,6 +47,9 @@
         <activity
             android:name="com.example.main.GuideActivity"
             android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.hehuorenfans.PartnerActivity"
+            android:screenOrientation="portrait" />
 
         <activity
             android:name="com.example.main.WelcomeActivity"

@@ -256,4 +256,7 @@ public class CommonResource {
     public static final String SHARE = "http://mall.keruia.com";
 
     public static final String HOME_LOCAL = "HOME";
+//     127.0.0.1:4001/rest/user/countPartnerNumAndShopNumByUserCode    get请求 参数token type 0 合伙人 1 门店
+    public static final String HEHUORENNUMBER="/rest/user/countPartnerNumAndShopNumByUserCode";//合伙人门店
+    public static final String HEHUORENNUMBERLIST="/rest/user/getPartnerNumAndShopNumByUserCode";//合伙人门店列表
 }
