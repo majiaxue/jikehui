@@ -332,14 +332,14 @@ public class MineFragment extends BaseFragment<MineView, MinePresenter> implemen
     public void loginSuccess(UserInfoBean userInfo) {
         this.userInfo = userInfo;
         mineName.setText(userInfo.getNickname());
-        Glide.with(getContext()).load(userInfo.getIcon()).placeholder(R.drawable.vhjfg).apply(RequestOptions.circleCropTransform()).into(mineHeader);
+        Glide.with(getContext()).load(userInfo.getIcon()).placeholder(R.drawable.touxiang).apply(RequestOptions.circleCropTransform()).into(mineHeader);
         mineCode.setText("邀请码：" + userInfo.getInviteCode());
         mineTemp.setVisibility(View.VISIBLE);
         mIWantUp.setVisibility(View.VISIBLE);
         mBalanceTxt.setText(userInfo.getBlance() == null ? "0" : userInfo.getBlance());
 
         if (userInfo.getLevel() != null && !"".equals(userInfo.getLevel().trim())) {
-            mineLv.setVisibility(View.VISIBLE);
+            mineLv.setVisibility(View.GONE);
             mineLv.setText(userInfo.getLevel());
         } else {
             mineLv.setVisibility(View.GONE);
@@ -349,7 +349,7 @@ public class MineFragment extends BaseFragment<MineView, MinePresenter> implemen
     @Override
     public void onError() {
         mineName.setText("请注册/登录");
-        mineHeader.setImageResource(R.drawable.vhjfg);
+        mineHeader.setImageResource(R.drawable.touxiang);
         mineTemp.setVisibility(View.GONE);
         mIWantUp.setVisibility(View.GONE);
         mineLv.setVisibility(View.GONE);

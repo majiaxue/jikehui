@@ -295,7 +295,7 @@ public class BusinessApplicationPresenter extends BasePresenter<BusinessApplicat
         }));
     }
 
-    public void popupGoodsClassify(String form) {
+    public void popupGoodsClassify(int form) {
         if (CommonResource.HISTORY_LOCAL.equals(form)) {
             final View view = LayoutInflater.from(mContext).inflate(R.layout.popup_select_goods_classify, null);
             TextView text = view.findViewById(R.id.popup_select_goods_classify_text);

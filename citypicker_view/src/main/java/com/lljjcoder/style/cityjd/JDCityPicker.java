@@ -9,6 +9,7 @@ import android.graphics.drawable.ColorDrawable;
 import android.os.Handler;
 import android.os.Message;
 import android.support.v4.view.animation.FastOutSlowInInterpolator;
+import android.util.Log;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -247,6 +248,8 @@ public class JDCityPicker {
      */
     private void setProvinceListData() {
         provinceList = parseHelper.getProvinceBeanArrayList();
+        Log.d("tag1",""+provinceList.size());
+        Log.d("tag1",provinceList.toString());
         if (provinceList != null && !provinceList.isEmpty()) {
             mProvinceAdapter = new ProvinceAdapter(context, provinceList);
             mCityListView.setAdapter(mProvinceAdapter);
@@ -391,6 +394,8 @@ public class JDCityPicker {
 
                 case INDEX_TAB_CITY:
                     cityList = (List<CityBean>) msg.obj;
+                    Log.d("citylist",cityList.size()+"");
+                    Log.d("citylist",cityList.toString());
                     mCityAdapter.notifyDataSetChanged();
                     if (cityList != null && !cityList.isEmpty()) {
                         mCityListView.setAdapter(mCityAdapter);
@@ -400,6 +405,8 @@ public class JDCityPicker {
 
                 case INDEX_TAB_AREA:
                     areaList = (List<DistrictBean>) msg.obj;
+                    Log.d("areaList",areaList.size()+"");
+                    Log.d("areaList",areaList.toString());
                     mAreaAdapter.notifyDataSetChanged();
                     if (areaList != null && !areaList.isEmpty()) {
                         mCityListView.setAdapter(mAreaAdapter);

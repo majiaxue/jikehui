@@ -68,6 +68,7 @@
                 android:textSize="@dimen/sp_10" />
 
             <TextView
+                android:visibility="gone"
                 android:id="@+id/type_detail_lst_predict"
                 android:layout_width="wrap_content"
                 android:layout_height="@dimen/dp_17"

@@ -2,14 +2,14 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="@dimen/dp_270"
     android:layout_height="@dimen/dp_479"
-    android:background="@drawable/bg_yaoqinghaoyou2">
+    android:background="@drawable/yao1">
 
     <RelativeLayout
         android:layout_width="@dimen/dp_148"
         android:layout_height="@dimen/dp_148"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="@dimen/dp_47"
+        android:layout_marginBottom="@dimen/dp_94"
         android:background="#ffffff">
 
         <ImageView

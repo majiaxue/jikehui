@@ -82,7 +82,7 @@ public class LogisticsInformationPresenter extends BasePresenter<LogisticsInform
 
             @Override
             public void onError(String errorCode, String errorMsg) {
-
+                LogUtil.e("快递错误信息----"+errorCode+"----------"+errorMsg);
             }
         }));
 
@@ -138,7 +138,7 @@ public class LogisticsInformationPresenter extends BasePresenter<LogisticsInform
 
             @Override
             public void onError(String errorCode, String errorMsg) {
-                LogUtil.e("errorMsg------->" + errorMsg);
+                LogUtil.e("推荐errorMsg------->" + errorMsg);
             }
         }));
 

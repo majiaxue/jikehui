@@ -17,11 +17,13 @@
         android:orientation="horizontal">
 
         <ImageView
+            android:visibility="gone"
             android:layout_width="@dimen/dp_13"
             android:layout_height="@dimen/dp_13"
             android:src="@drawable/icon_dianpu15" />
 
         <TextView
+            android:visibility="gone"
             android:id="@+id/stay_appraise_parent_shop"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -34,6 +36,7 @@
             android:textSize="@dimen/sp_14" />
 
         <ImageView
+            android:visibility="gone"
             android:layout_width="@dimen/dp_5"
             android:layout_height="@dimen/dp_9"
             android:layout_marginLeft="@dimen/dp_9"

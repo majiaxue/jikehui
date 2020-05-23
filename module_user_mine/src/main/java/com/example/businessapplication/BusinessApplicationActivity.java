@@ -136,6 +136,7 @@ public class BusinessApplicationActivity extends BaseActivity<BusinessApplicatio
         } else {
             presenter.goodsClass(from);
         }
+        LogUtil.e("是这个界面");
     }
 
     @Override
@@ -148,13 +149,32 @@ public class BusinessApplicationActivity extends BaseActivity<BusinessApplicatio
             }
         });
 
+        //选择分类
+//        businessApplicationShopClassify.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                if (businessApplicationShopTypeText.getText().toString().equals("点击选择")) {
+//                    Toast.makeText(BusinessApplicationActivity.this, "请先选择商家类型!", Toast.LENGTH_SHORT).show();
+//                } else {
+//                    if (businessApplicationShopTypeText.getText().toString().equals("线上商家")){
+//                        presenter.popupGoodsClassify(businessApplicationShopClassifyText,0);
+//                    }else if (businessApplicationShopTypeText.getText().toString().equals("本地商家")){
+//                        presenter.popupGoodsClassify(businessApplicationShopClassifyText,1);
+//                    }
+//                }
+//            }
+//        });
+
         //点击提交
         businessApplicationSubmit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 if (TextUtils.isEmpty(businessApplicationShopName.getText().toString())) {
                     Toast.makeText(BusinessApplicationActivity.this, "请输入店铺名!", Toast.LENGTH_SHORT).show();
-                } else if ("点击选择".equals(businessApplicationShopClassifyText.getText().toString())) {
+                } else if ("点击选择".equals(businessApplicationShopTypeText.getText().toString())) {
+                    Toast.makeText(BusinessApplicationActivity.this, "请选择商家类型!", Toast.LENGTH_SHORT).show();
+                }
+                else if ("点击选择".equals(businessApplicationShopClassifyText.getText().toString())) {
                     Toast.makeText(BusinessApplicationActivity.this, "请选择商品分类!", Toast.LENGTH_SHORT).show();
                 } else if (TextUtils.isEmpty(businessApplicationName.getText().toString())) {
                     Toast.makeText(BusinessApplicationActivity.this, "请输入姓名!", Toast.LENGTH_SHORT).show();
@@ -185,11 +205,17 @@ public class BusinessApplicationActivity extends BaseActivity<BusinessApplicatio
                     sellerVo.setSellerBusinessLicenseUrl(map.get("3"));
                     sellerVo.setSellerFoodSafetyPermitUrl(map.get("4"));
 
-                    if (CommonResource.HISTORY_LOCAL.equals(from)) {
-                        sellerVo.setSellerType("1");
-                    } else {
+                    if (businessApplicationShopTypeText.getText().toString().equals("线上商家")) {
                         sellerVo.setSellerType("0");
+                    } else if (businessApplicationShopTypeText.getText().toString().equals("本地商家")) {
+                        sellerVo.setSellerType("1");
                     }
+
+//                    if (CommonResource.HISTORY_LOCAL.equals(from)) {
+//                        sellerVo.setSellerType("1");
+//                    } else {
+//                        sellerVo.setSellerType("0");
+//                    }
                     sellerVo.setSellerShopName(businessApplicationShopName.getText().toString());
                     sellerVo.setSellerCategory(categoryId + "");
                     sellerVo.setSellerName(businessApplicationName.getText().toString());
@@ -269,10 +295,19 @@ public class BusinessApplicationActivity extends BaseActivity<BusinessApplicatio
             }
         });
         //选择分类
+        //选择分类
         businessApplicationShopClassify.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                presenter.popupGoodsClassify(from);
+                if (businessApplicationShopTypeText.getText().toString().equals("点击选择")) {
+                    Toast.makeText(BusinessApplicationActivity.this, "请先选择商家类型!", Toast.LENGTH_SHORT).show();
+                } else {
+                    if (businessApplicationShopTypeText.getText().toString().equals("线上商家")){
+                        presenter.popupGoodsClassify(0);
+                    }else if (businessApplicationShopTypeText.getText().toString().equals("本地商家")){
+                        presenter.popupGoodsClassify(1);
+                    }
+                }
             }
         });
         //选择地址

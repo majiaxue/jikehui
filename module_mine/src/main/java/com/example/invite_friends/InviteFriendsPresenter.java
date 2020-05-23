@@ -43,9 +43,9 @@ public class InviteFriendsPresenter extends BasePresenter<InviteFriendsView> {
 
     public void loadData() {
         Bitmap qrImage1 = QRCode.createQRImage(CommonResource.INVITE + CommonResource.INVITE_ERWEIMA + "?inviteCode=" + SPUtil.getStringValue(CommonResource.USER_INVITE), (int) mContext.getResources().getDimension(R.dimen.dp_193), (int) mContext.getResources().getDimension(R.dimen.dp_193));
-//        View view1 = LayoutInflater.from(mContext).inflate(R.layout.vp_invite_view1, null);
-//        ImageView img1 = view1.findViewById(R.id.invite_friends_erweima1);
-//        Glide.with(mContext).load(qrImage1).into(img1);
+        View view1 = LayoutInflater.from(mContext).inflate(R.layout.vp_invite_view1, null);
+        ImageView img1 = view1.findViewById(R.id.invite_friends_erweima1);
+        Glide.with(mContext).load(qrImage1).into(img1);
         View view2 = LayoutInflater.from(mContext).inflate(R.layout.vp_invite_view2, null);
         ImageView img2 = view2.findViewById(R.id.invite_friends_erweima2);
         Glide.with(mContext).load(qrImage1).into(img2);
@@ -56,7 +56,7 @@ public class InviteFriendsPresenter extends BasePresenter<InviteFriendsView> {
 //        ImageView img4 = view4.findViewById(R.id.invite_friends_erweima4);
 //        Glide.with(mContext).load(qrImage1).into(img4);
 
-//        list.add(view1);
+        list.add(view1);
         list.add(view2);
 //        list.add(view3);
 //        list.add(view4);
@@ -80,7 +80,7 @@ public class InviteFriendsPresenter extends BasePresenter<InviteFriendsView> {
     public void share(int position) {
         Bitmap bitmap = ViewToBitmap.createBitmap3(list.get(position), list.get(position).getWidth(), list.get(position).getHeight());
         new ShareAction((Activity) mContext)
-                .withMedia(new UMImage(mContext, bitmap))
+                .withMedia(new UMImage(mContext,bitmap))
                 .setDisplayList(SHARE_MEDIA.WEIXIN, SHARE_MEDIA.WEIXIN_CIRCLE, SHARE_MEDIA.QQ, SHARE_MEDIA.QZONE)
                 .setCallback(shareListener).open();
     }

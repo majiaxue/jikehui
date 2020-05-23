@@ -2,6 +2,7 @@ package com.example.hehuorenfans;
 
 import android.graphics.Color;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
@@ -21,7 +22,10 @@ import com.example.utils.SPUtil;
 import com.example.utils.SpaceItemDecoration;
 import com.scwang.smartrefresh.header.MaterialHeader;
 import com.scwang.smartrefresh.layout.SmartRefreshLayout;
+import com.scwang.smartrefresh.layout.api.RefreshLayout;
 import com.scwang.smartrefresh.layout.footer.ClassicsFooter;
+import com.scwang.smartrefresh.layout.listener.OnLoadMoreListener;
+import com.scwang.smartrefresh.layout.listener.OnRefreshListener;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -56,9 +60,10 @@ public class PartnerActivity extends BaseActivity<PartnerView, PartnerPresenter>
     RecyclerView groupFansRv;
     @BindView(R2.id.group_fans_refresh)
     SmartRefreshLayout groupFansRefresh;
+    private int totalPage = 1;
+    private int page = 1;
     private boolean isSearch = false;
     private boolean isZhitui = true;
-    private int page=1;
 
     @Override
     public int getLayoutId() {
@@ -84,6 +89,41 @@ public class PartnerActivity extends BaseActivity<PartnerView, PartnerPresenter>
 
     @Override
     public void initClick() {
+
+        groupFansBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
+
+        //********************设置上拉刷新下拉加载
+//        groupFansRefresh.setOnRefreshListener(new OnRefreshListener() {
+////            @Override
+////            public void onRefresh(@NonNull RefreshLayout refreshLayout) {
+////                page = 1;
+////                if (isSearch) {
+////                    presenter.loadData(page, groupFansEdit.getText().toString(), isZhitui ? "1" : "0");
+////                } else {
+////                    presenter.loadData(page, "", isZhitui ? "1" : "0");
+////                }
+////            }
+////        });
+////        groupFansRefresh.setOnLoadMoreListener(new OnLoadMoreListener() {
+////            @Override
+////            public void onLoadMore(@NonNull RefreshLayout refreshLayout) {
+////                page++;
+////                if (page <= totalPage) {
+////                    if (isSearch) {
+////                        presenter.loadData(page, groupFansEdit.getText().toString(), isZhitui ? "1" : "0");
+////                    } else {
+////                        presenter.loadData(page, "", isZhitui ? "1" : "0");
+////                    }
+////                } else {
+////                    groupFansRefresh.finishLoadMore();
+////                }
+////            }
+////        });
 
         hehuoren.setOnClickListener(new View.OnClickListener() {
             @Override

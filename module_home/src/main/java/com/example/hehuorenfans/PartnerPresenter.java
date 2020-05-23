@@ -58,7 +58,7 @@ public class PartnerPresenter extends BasePresenter<PartnerView> {
     }
     public void getDtaList(final int page, String type2){
 //        下面列表接口 127.0.0.1:4001/rest/user/getPartnerNumAndShopNumByUserCode
-        Map type = MapUtil.getInstance().addParms("type", "0").addParms("page",type2).build();
+        Map type = MapUtil.getInstance().addParms("type", type2).addParms("page",page).build();
         Observable head = RetrofitUtil.getInstance().getApi(CommonResource.BASEURL_4001).getHead(CommonResource.HEHUORENNUMBERLIST, type, SPUtil.getToken());
         RetrofitUtil.getInstance().toSubscribe(head,new OnMyCallBack(new OnDataListener() {
             @Override

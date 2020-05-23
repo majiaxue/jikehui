@@ -106,6 +106,7 @@ public class UpOrderConfirmPresenter extends BasePresenter<UpOrderConfirmView> {
     }
 
     public void commit(boolean isWeChat, OrderConfirmBean bean, String name, String levelId) {
+        LogUtil.e("bean---------"+bean.toString());
         LogUtil.e("斤斤计较斤斤计较"+levelId);
         if (!isCan) {
             Toast.makeText(mContext, "未获取到收货地址，请重试", Toast.LENGTH_SHORT).show();

@@ -14,6 +14,7 @@
         android:orientation="horizontal">
 
         <LinearLayout
+            android:visibility="gone"
             android:id="@+id/goods_detail_bottom_shop"
             android:layout_width="@dimen/dp_0"
             android:layout_height="match_parent"
@@ -487,6 +488,7 @@
             </LinearLayout>
 
             <RelativeLayout
+                android:visibility="gone"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/dp_81"
                 android:layout_gravity="center_horizontal"
